@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Madison Tech Society</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="members.html" class="nav-link">Members</a></li>
+                <li><a href="lessons.html" class="nav-link">Lessons</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="join.html" class="nav-link">Join Us</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Get in Touch</h1>
+                <p>Have questions? Want to get involved? We'd love to hear from you!</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:mts@jmu.edu">mts@jmu.edu</a></p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Discord</h3>
+                            <p>Join our Discord server for real-time chat and updates</p>
+                            <a href="#" class="btn btn-secondary">Join Discord</a>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">GitHub</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Meeting Location</h3>
+                            <p>ISAT Building, Room 259<br>
+                            James Madison University<br>
+                            Harrisonburg, VA 22807</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h3>Meeting Times</h3>
+                            <p>Weekly meetings: Thursdays at 6:30 PM<br>
+                            Workshops: Various times (check events page)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <h2>Send us a Message</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a topic</option>
+                                    <option value="general">General Question</option>
+                                    <option value="membership">Membership Inquiry</option>
+                                    <option value="events">Event Information</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest updates on events, workshops, and opportunities.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Do I need programming experience to join?</h3>
+                        <p>Not at all! MTS welcomes students of all skill levels. We have resources and workshops for beginners as well as advanced topics for experienced programmers.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a membership fee?</h3>
+                        <p>No, membership in Madison Tech Society is completely free for all JMU students.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How often do you meet?</h3>
+                        <p>We have weekly meetings every Thursday at 6:30 PM, plus additional workshops and events throughout the semester.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What if I can't attend meetings regularly?</h3>
+                        <p>That's okay! We understand students have busy schedules. You can still participate in events when available and access our online resources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Madison Tech Society - James Madison University</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

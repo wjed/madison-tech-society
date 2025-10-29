@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - Madison Tech Society</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="members.html" class="nav-link">Members</a></li>
+                <li><a href="lessons.html" class="nav-link">Lessons</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="join.html" class="nav-link active">Join Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Join Madison Tech Society</h1>
+                <p>Ready to grow your tech skills and connect with like-minded students?</p>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <h2>Why Join MTS?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Skill Development</h3>
+                        <p>Access to workshops, tutorials, and hands-on learning experiences in various tech domains.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Networking</h3>
+                        <p>Connect with fellow students, alumni, and industry professionals in the tech field.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Career Support</h3>
+                        <p>Resume reviews, interview prep, and guidance on landing your first tech job.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Community</h3>
+                        <p>Be part of a supportive community that celebrates learning and growth together.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Leadership</h3>
+                        <p>Opportunities to lead projects, mentor others, and develop leadership skills.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Resources</h3>
+                        <p>Access to exclusive learning materials, recordings, and project templates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to-join">
+            <div class="container">
+                <h2>How to Get Started</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Attend an Event</h3>
+                            <p>Come to one of our weekly meetings or workshops to get a feel for our community.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Fill Out the Form</h3>
+                            <p>Complete our membership form with your interests and goals.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Get Involved</h3>
+                            <p>Start participating in events, workshops, and collaborative projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership-form">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Membership Application</h2>
+                    <form class="join-form">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">JMU Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="year">Graduation Year *</label>
+                            <select id="year" name="year" required>
+                                <option value="">Select Year</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="major">Major *</label>
+                            <input type="text" id="major" name="major" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interests">Tech Interests</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="interests" value="web-dev"> Web Development</label>
+                                <label><input type="checkbox" name="interests" value="mobile"> Mobile Development</label>
+                                <label><input type="checkbox" name="interests" value="data-science"> Data Science</label>
+                                <label><input type="checkbox" name="interests" value="cybersecurity"> Cybersecurity</label>
+                                <label><input type="checkbox" name="interests" value="ai-ml"> AI/Machine Learning</label>
+                                <label><input type="checkbox" name="interests" value="game-dev"> Game Development</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience">Programming Experience</label>
+                            <select id="experience" name="experience">
+                                <option value="">Select Level</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goals">What do you hope to gain from MTS?</label>
+                            <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your goals and what you're looking to learn or achieve..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="next-steps">
+            <div class="container">
+                <h2>What Happens Next?</h2>
+                <p>After submitting your application, you'll receive a welcome email with:</p>
+                <ul>
+                    <li>Access to our Discord server</li>
+                    <li>Calendar invites for upcoming events</li>
+                    <li>Links to our resource library</li>
+                    <li>Information about getting involved in projects</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Madison Tech Society - James Madison University</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

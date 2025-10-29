@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons & Resources - Madison Tech Society</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="leadership.html" class="nav-link">Leadership</a></li>
+                <li><a href="members.html" class="nav-link">Members</a></li>
+                <li><a href="lessons.html" class="nav-link active">Lessons</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="join.html" class="nav-link">Join Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Lessons & Resources</h1>
+                <p>Comprehensive learning materials to help you grow your tech skills</p>
+            </div>
+        </section>
+
+        <section class="lessons-filter">
+            <div class="container">
+                <div class="filter-controls">
+                    <input type="text" id="searchLessons" placeholder="Search lessons..." class="search-input">
+                    <select id="topicFilter" class="filter-select">
+                        <option value="all">All Topics</option>
+                        <option value="career">Career Development</option>
+                        <option value="projects">Projects</option>
+                        <option value="networking">Networking</option>
+                        <option value="applications">Applications</option>
+                        <option value="interviews">Interviews</option>
+                        <option value="panel">Industry Panel</option>
+                        <option value="planning">Planning</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="lessons-content">
+            <div class="container">
+                <div class="semester-section">
+                    <h2>Fall Semester: "Getting Ready" — Building Your Foundation</h2>
+                    <p class="semester-description">Focus on building the skills, materials, and mindset you need to land internships and start your tech career.</p>
+                </div>
+                
+                <div class="lessons-grid">
+                    <a href="lessons/lesson1.html" class="lesson-card" data-topic="career">
+                        <div class="lesson-header">
+                            <h3>What Is a Career in Tech (And How Do You Get One)?</h3>
+                            <span class="lesson-tag">Career Foundations</span>
+                        </div>
+                        <p class="lesson-description">Overview of CS/IT career paths: SWE, PM, IT, data, cybersecurity, etc. Learn about internships vs co-ops vs research and how to reverse-engineer your tech career goals.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 1</span>
+                            <span class="lesson-duration">Fall Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Career Paths Guide</span>
+                            <span class="resource-link">Goal Setting</span>
+                            <span class="resource-link">Success Stories</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson2.html" class="lesson-card" data-topic="career">
+                        <div class="lesson-header">
+                            <h3>Resume Building for Tech Roles</h3>
+                            <span class="lesson-tag">Professional Development</span>
+                        </div>
+                        <p class="lesson-description">What makes a tech resume effective, how to write strong project/experience bullets, formatting tools (Overleaf, Canva, Word), and hands-on resume workshop.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 2</span>
+                            <span class="lesson-duration">Fall Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Resume Templates</span>
+                            <span class="resource-link">Review Checklist</span>
+                            <span class="resource-link">Workshop Materials</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson3.html" class="lesson-card" data-topic="career">
+                        <div class="lesson-header">
+                            <h3>LinkedIn + GitHub: Online Presence That Works</h3>
+                            <span class="lesson-tag">Professional Branding</span>
+                        </div>
+                        <p class="lesson-description">Building your LinkedIn profile (headline, summary, skills), setting up GitHub to show you're active, and building social proof for recruiters.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 3</span>
+                            <span class="lesson-duration">Fall Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Profile Templates</span>
+                            <span class="resource-link">GitHub Setup</span>
+                            <span class="resource-link">Networking Tips</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson4.html" class="lesson-card" data-topic="projects">
+                        <div class="lesson-header">
+                            <h3>Personal Projects That Employers Care About</h3>
+                            <span class="lesson-tag">Project Development</span>
+                        </div>
+                        <p class="lesson-description">Types of projects that get interviews (real-world, relevant, impactful), where to get ideas, and how to document, demo, and talk about your projects.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 4</span>
+                            <span class="lesson-duration">Fall Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Project Ideas</span>
+                            <span class="resource-link">Documentation Guide</span>
+                            <span class="resource-link">Demo Examples</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson5.html" class="lesson-card" data-topic="networking">
+                        <div class="lesson-header">
+                            <h3>Networking 101: How to Build Relationships in Tech</h3>
+                            <span class="lesson-tag">Professional Networking</span>
+                        </div>
+                        <p class="lesson-description">Reaching out to alumni, recruiters, engineers. What to say in cold messages, how to build long-term connections, career fair and LinkedIn message templates.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 5</span>
+                            <span class="lesson-duration">Fall Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Message Templates</span>
+                            <span class="resource-link">Networking Strategies</span>
+                            <span class="resource-link">Follow-up Guide</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson6.html" class="lesson-card" data-topic="applications">
+                        <div class="lesson-header">
+                            <h3>Finding and Applying to Internships</h3>
+                            <span class="lesson-tag">Job Search</span>
+                        </div>
+                        <p class="lesson-description">Where to search for roles (not just LinkedIn), how to track applications and follow up, understanding job descriptions and applying when you don't meet every requirement.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 6</span>
+                            <span class="lesson-duration">Fall Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Job Boards List</span>
+                            <span class="resource-link">Application Tracker</span>
+                            <span class="resource-link">Requirements Guide</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="semester-section">
+                    <h2>Spring Semester: "Getting In" — Applying, Interviewing, and Succeeding</h2>
+                    <p class="semester-description">Focus on the process of landing interviews, crushing them, and growing professionally.</p>
+                </div>
+
+                <div class="lessons-grid">
+                    <a href="lessons/lesson7.html" class="lesson-card" data-topic="interviews">
+                        <div class="lesson-header">
+                            <h3>Behavioral Interviewing: Telling Your Story with Confidence</h3>
+                            <span class="lesson-tag">Interview Skills</span>
+                        </div>
+                        <p class="lesson-description">STAR method for telling compelling stories, common behavioral questions, building a personal "story bank", and practice Q&A sessions.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 7</span>
+                            <span class="lesson-duration">Spring Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">STAR Method Guide</span>
+                            <span class="resource-link">Question Bank</span>
+                            <span class="resource-link">Practice Sessions</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson8.html" class="lesson-card" data-topic="interviews">
+                        <div class="lesson-header">
+                            <h3>Technical Interviews — Demystified</h3>
+                            <span class="lesson-tag">Technical Skills</span>
+                        </div>
+                        <p class="lesson-description">What entry-level tech interviews actually look like, explaining your code (not just writing it), how to prepare without burning out, and mock interview activities.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 8</span>
+                            <span class="lesson-duration">Spring Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Coding Practice</span>
+                            <span class="resource-link">Explanation Tips</span>
+                            <span class="resource-link">Mock Interviews</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson9.html" class="lesson-card" data-topic="career">
+                        <div class="lesson-header">
+                            <h3>How to Stand Out Without Burning Out</h3>
+                            <span class="lesson-tag">Personal Branding</span>
+                        </div>
+                        <p class="lesson-description">How to get noticed in a sea of applicants, showcasing soft skills and leadership, differentiating yourself with a blog, content, or community involvement.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 9</span>
+                            <span class="lesson-duration">Spring Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Differentiation Strategies</span>
+                            <span class="resource-link">Content Creation</span>
+                            <span class="resource-link">Leadership Examples</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson10.html" class="lesson-card" data-topic="panel">
+                        <div class="lesson-header">
+                            <h3>Real Talk with Recruiters & Engineers</h3>
+                            <span class="lesson-tag">Industry Panel</span>
+                        </div>
+                        <p class="lesson-description">Guest panel of hiring managers, MTS alumni, or recent grads. Q&A on hiring, resumes, what worked for them, and "What I wish I knew" insights.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 10</span>
+                            <span class="lesson-duration">Spring Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Panel Discussion</span>
+                            <span class="resource-link">Q&A Session</span>
+                            <span class="resource-link">Industry Insights</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson11.html" class="lesson-card" data-topic="career">
+                        <div class="lesson-header">
+                            <h3>Offers, Rejections, and Everything In Between</h3>
+                            <span class="lesson-tag">Career Navigation</span>
+                        </div>
+                        <p class="lesson-description">How to respond to rejections and keep momentum, accepting offers, negotiating, or turning one down, and dealing with imposter syndrome.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 11</span>
+                            <span class="lesson-duration">Spring Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Resilience Guide</span>
+                            <span class="resource-link">Negotiation Tips</span>
+                            <span class="resource-link">Mindset Strategies</span>
+                        </div>
+                    </a>
+
+                    <a href="lessons/lesson12.html" class="lesson-card" data-topic="planning">
+                        <div class="lesson-header">
+                            <h3>Your Long-Term Game Plan</h3>
+                            <span class="lesson-tag">Career Planning</span>
+                        </div>
+                        <p class="lesson-description">Building skills between semesters, setting up for a strong summer (learning plans, side projects, volunteering), reflecting on growth and setting goals.</p>
+                        <div class="lesson-meta">
+                            <span class="lesson-date">Lesson 12</span>
+                            <span class="lesson-duration">Spring Semester</span>
+                        </div>
+                        <div class="lesson-resources">
+                            <span class="resource-link">Planning Templates</span>
+                            <span class="resource-link">Goal Setting</span>
+                            <span class="resource-link">Growth Tracking</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Madison Tech Society - James Madison University</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/lessons.js"></script>
+</body>
+</html>
