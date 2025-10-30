@@ -11,7 +11,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+                <a href="index.html">
+                    <img src="photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
@@ -113,64 +115,9 @@
 
         <section class="membership-form">
             <div class="container">
-                <div class="form-container">
-                    <h2>Membership Application</h2>
-                    <form class="join-form">
-                        <div class="form-group">
-                            <label for="fullName">Full Name *</label>
-                            <input type="text" id="fullName" name="fullName" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">JMU Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="year">Graduation Year *</label>
-                            <select id="year" name="year" required>
-                                <option value="">Select Year</option>
-                                <option value="2025">2025</option>
-                                <option value="2026">2026</option>
-                                <option value="2027">2027</option>
-                                <option value="2028">2028</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="major">Major *</label>
-                            <input type="text" id="major" name="major" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="interests">Tech Interests</label>
-                            <div class="checkbox-group">
-                                <label><input type="checkbox" name="interests" value="web-dev"> Web Development</label>
-                                <label><input type="checkbox" name="interests" value="mobile"> Mobile Development</label>
-                                <label><input type="checkbox" name="interests" value="data-science"> Data Science</label>
-                                <label><input type="checkbox" name="interests" value="cybersecurity"> Cybersecurity</label>
-                                <label><input type="checkbox" name="interests" value="ai-ml"> AI/Machine Learning</label>
-                                <label><input type="checkbox" name="interests" value="game-dev"> Game Development</label>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="experience">Programming Experience</label>
-                            <select id="experience" name="experience">
-                                <option value="">Select Level</option>
-                                <option value="beginner">Beginner</option>
-                                <option value="intermediate">Intermediate</option>
-                                <option value="advanced">Advanced</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="goals">What do you hope to gain from MTS?</label>
-                            <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your goals and what you're looking to learn or achieve..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">Submit Application</button>
-                    </form>
+                <h2>Membership Application</h2>
+                <div class="google-form-container">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgNI3dPoGSHSPTNEV2wY225s6sozUMBZ5_Ea4xRv2rOX6LAg/viewform?embedded=true" width="100%" height="1360" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
         </section>
