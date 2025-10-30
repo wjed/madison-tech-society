@@ -1,8 +1,8 @@
 /* Custom Font */
 @font-face {
-    font-family: 'Artegra Slab';
-    src: url('../fonts/artegra-slab-bold.otf') format('opentype');
-    font-weight: bold;
+    font-family: 'Alliance No.2';
+    src: url('../fonts/Alliance No.2 Regular.otf') format('opentype');
+    font-weight: normal;
     font-display: swap;
 }
 
@@ -145,9 +145,9 @@ body {
 }
 
 .hero h1 {
-    font-family: 'Artegra Slab', serif;
+    font-family: 'Alliance No.2', serif;
     font-size: 3.5rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 1rem;
 }
 
@@ -173,9 +173,9 @@ body {
 }
 
 .page-header h1 {
-    font-family: 'Artegra Slab', serif;
+    font-family: 'Alliance No.2', serif;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 1rem;
 }
 
@@ -190,18 +190,18 @@ section {
 }
 
 section h2 {
-    font-family: 'Artegra Slab', serif;
+    font-family: 'Alliance No.2', serif;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 3rem;
     text-align: center;
     color: #009698;
 }
 
 section h3 {
-    font-family: 'Artegra Slab', serif;
+    font-family: 'Alliance No.2', serif;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-bottom: 1rem;
     color: #009698;
 }
@@ -688,7 +688,7 @@ section h3 {
 }
 
 .stat-item h3 {
-    font-family: 'Artegra Slab', serif;
+    font-family: 'Alliance No.2', serif;
     font-size: 2.5rem;
     color: #009698;
     margin-bottom: 0.5rem;
@@ -763,6 +763,203 @@ section h3 {
     color: #333333;
     margin: 0;
     font-weight: 500;
+}
+
+/* Dropdown Navigation */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    content: ' ▼';
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #333333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #8EE4D7;
+    color: #009698;
+}
+
+/* Homework Page */
+.homework-content {
+    padding: 4rem 0;
+}
+
+.homework-info {
+    margin-bottom: 4rem;
+}
+
+.assignment-card {
+    background: #8EE4D7;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #009698;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.assignment-card h3 {
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.assignment-description {
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.assignment-details {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.due-date {
+    color: #009698;
+    font-weight: 600;
+}
+
+.assignment-type {
+    background: #009698;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.submission-form-section {
+    margin-bottom: 4rem;
+}
+
+.homework-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8EE4D7;
+}
+
+.homework-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.homework-form input[type="file"] {
+    border: 2px dashed #8EE4D7;
+    padding: 1rem;
+    background: #F4EFE1;
+}
+
+.homework-form small {
+    color: #009698;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.homework-guidelines {
+    margin-bottom: 4rem;
+}
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.guideline-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8EE4D7;
+}
+
+.guideline-item h4 {
+    color: #009698;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.guideline-item p {
+    color: #333333;
+    line-height: 1.6;
+}
+
+.assignments-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.assignment-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #8EE4D7;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.assignment-item h4 {
+    color: #009698;
+    margin-bottom: 0.5rem;
+}
+
+.assignment-item p {
+    color: #333333;
+    margin: 0;
+}
+
+.status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.status.completed {
+    background: #10b981;
+    color: white;
 }
 
 .filter-controls {
@@ -1245,5 +1442,28 @@ section h3 {
     
     .membership-stats {
         grid-template-columns: 1fr;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #F4EFE1;
+        margin-top: 0.5rem;
+    }
+    
+    .dropdown-toggle::after {
+        display: none;
+    }
+    
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .assignment-item {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

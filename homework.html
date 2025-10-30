@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Submissions - Madison Tech Society</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="leadership.html">Leadership</a></li>
+                        <li><a href="members.html">Members</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Education</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="homework.html" class="nav-link active">Homework</a></li>
+                <li><a href="join.html" class="nav-link">Join Us</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Homework Submissions</h1>
+                <p>Submit your weekly assignments and track your professional development progress</p>
+            </div>
+        </section>
+
+        <section class="homework-content">
+            <div class="container">
+                <div class="homework-info">
+                    <h2>Current Assignment</h2>
+                    <div class="assignment-card">
+                        <h3>Week 8: Interview Preparation</h3>
+                        <p class="assignment-description">Complete the STAR method worksheet and prepare 3 behavioral interview stories based on your experiences. Practice telling these stories and record yourself for self-evaluation.</p>
+                        <div class="assignment-details">
+                            <span class="due-date">Due: November 13, 2024</span>
+                            <span class="assignment-type">Professional Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submission-form-section">
+                    <h2>Submit Your Homework</h2>
+                    <div class="form-container">
+                        <form class="homework-form">
+                            <div class="form-group">
+                                <label for="studentName">Full Name *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="studentEmail">JMU Email *</label>
+                                <input type="email" id="studentEmail" name="studentEmail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assignmentWeek">Assignment Week *</label>
+                                <select id="assignmentWeek" name="assignmentWeek" required>
+                                    <option value="">Select Week</option>
+                                    <option value="week8">Week 8: Interview Preparation</option>
+                                    <option value="week7">Week 7: LinkedIn Optimization</option>
+                                    <option value="week6">Week 6: Resume Building</option>
+                                    <option value="week5">Week 5: Career Planning</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="submissionText">Written Response</label>
+                                <textarea id="submissionText" name="submissionText" rows="6" placeholder="Provide your written response, reflections, or answers to assignment questions..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="fileUpload">File Upload (Optional)</label>
+                                <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx,.txt">
+                                <small>Accepted formats: PDF, DOC, DOCX, TXT (Max 10MB)</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="additionalNotes">Additional Notes</label>
+                                <textarea id="additionalNotes" name="additionalNotes" rows="3" placeholder="Any additional comments, questions, or notes about your submission..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit Homework</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="homework-guidelines">
+                    <h2>Submission Guidelines</h2>
+                    <div class="guidelines-grid">
+                        <div class="guideline-item">
+                            <h4>Attendance Requirement</h4>
+                            <p>You must attend the meeting to receive the homework assignment. Homework submissions without meeting attendance will not be accepted.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <h4>Due Dates</h4>
+                            <p>All homework must be submitted by 11:59 PM on the due date. Late submissions will result in reduced credit.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <h4>Quality Standards</h4>
+                            <p>Submissions should demonstrate genuine effort and reflection. One-sentence answers or minimal effort will not receive full credit.</p>
+                        </div>
+                        <div class="guideline-item">
+                            <h4>Professional Development Focus</h4>
+                            <p>All assignments are designed to enhance your professional skills. Take them seriously as they directly impact your career readiness.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="past-assignments">
+                    <h2>Past Assignments</h2>
+                    <div class="assignments-list">
+                        <div class="assignment-item">
+                            <h4>Week 7: LinkedIn Profile Optimization</h4>
+                            <p>Update your LinkedIn profile and connect with 5 professionals in your field</p>
+                            <span class="status completed">Completed</span>
+                        </div>
+                        <div class="assignment-item">
+                            <h4>Week 6: Resume Revision</h4>
+                            <p>Apply feedback from the resume workshop and submit your updated resume</p>
+                            <span class="status completed">Completed</span>
+                        </div>
+                        <div class="assignment-item">
+                            <h4>Week 5: Career Goal Setting</h4>
+                            <p>Complete the career planning worksheet and identify 3 target companies</p>
+                            <span class="status completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Madison Tech Society - James Madison University</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
