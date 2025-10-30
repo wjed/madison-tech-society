@@ -11,14 +11,28 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>MTS</h2>
+                <a href="../index.html">
+                    <img src="../photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+                </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../about.html" class="nav-link">About</a></li>
-                <li><a href="../members.html" class="nav-link">Members</a></li>
-                <li><a href="../lessons.html" class="nav-link active">Lessons</a></li>
-                <li><a href="../events.html" class="nav-link">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../leadership.html">Leadership</a></li>
+                        <li><a href="../members.html">Members</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">Education</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../lessons.html">Lessons</a></li>
+                        <li><a href="../events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="../homework.html" class="nav-link">Homework</a></li>
                 <li><a href="../join.html" class="nav-link">Join Us</a></li>
                 <li><a href="../contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -48,7 +62,7 @@
                 <div class="lesson-main">
                     <div class="lesson-overview">
                         <h2>Lesson Overview</h2>
-                        <p>Learn how to create a compelling tech resume that stands out to recruiters and hiring managers. This hands-on workshop covers everything from formatting and structure to writing impactful bullet points that showcase your technical skills and projects.</p>
+                        <p>Learn how to create a compelling tech resume that stands out to recruiters and hiring managers. This hands-on workshop covers everything from formatting and structure to writing impactful bullet points that showcase your experiences and potential.</p>
                         
                         <div class="lesson-tags">
                             <span class="lesson-tag">Professional Development</span>
@@ -56,81 +70,253 @@
                         </div>
                     </div>
 
-                    <div class="lesson-objectives">
-                        <h2>Learning Objectives</h2>
-                        <ul>
-                            <li>Understand what makes a tech resume effective and ATS-friendly</li>
-                            <li>Learn to write strong, quantified bullet points for projects and experiences</li>
-                            <li>Master formatting tools like Overleaf, Canva, and Word</li>
-                            <li>Participate in hands-on resume review and improvement workshop</li>
-                        </ul>
-                    </div>
-
-                    <div class="lesson-topics">
-                        <h2>Topics Covered</h2>
+                    <div class="discussion-topics">
+                        <h2>Discussion Topics & Talking Points</h2>
                         
                         <div class="topic-section">
-                            <h3>Resume Structure & Format</h3>
-                            <ul>
-                                <li>Essential sections: Contact, Education, Experience, Projects, Skills</li>
-                                <li>Optional sections: Certifications, Awards, Leadership</li>
-                                <li>ATS-friendly formatting best practices</li>
-                                <li>Length guidelines (1 page for students/new grads)</li>
-                            </ul>
+                            <h3>Opening: Resume Horror Stories</h3>
+                            <div class="talking-points">
+                                <p><strong>Icebreaker:</strong> "What's the worst resume advice you've ever heard?"</p>
+                                <ul>
+                                    <li>"Make it creative with lots of colors and graphics"</li>
+                                    <li>"Include your high school achievements"</li>
+                                    <li>"List every skill you've ever touched"</li>
+                                    <li>"Use fancy fonts to stand out"</li>
+                                </ul>
+                                <p><strong>Reality Check:</strong> Most resumes get 6 seconds of attention. What matters most?</p>
+                            </div>
                         </div>
 
                         <div class="topic-section">
-                            <h3>Writing Effective Bullet Points</h3>
-                            <ul>
-                                <li>Action verb + Task + Result formula</li>
-                                <li>Quantifying impact with numbers and metrics</li>
-                                <li>Technical skills integration</li>
-                                <li>Avoiding common mistakes and weak language</li>
-                            </ul>
+                            <h3>What Makes a Tech Resume Effective?</h3>
+                            <div class="talking-points">
+                                <p><strong>Discussion:</strong> "What do you think recruiters look for first?"</p>
+                                
+                                <h4>The 6-Second Scan:</h4>
+                                <ul>
+                                    <li>Name and contact info (obviously)</li>
+                                    <li>Current role/status (Student at JMU)</li>
+                                    <li>Relevant experience or projects</li>
+                                    <li>Technical skills that match the job</li>
+                                </ul>
+
+                                <h4>ATS (Applicant Tracking System) Friendly:</h4>
+                                <ul>
+                                    <li>Simple, clean formatting</li>
+                                    <li>Standard section headers</li>
+                                    <li>Keywords from job descriptions</li>
+                                    <li>No images, graphics, or fancy formatting</li>
+                                </ul>
+
+                                <h4>One Page Rule:</h4>
+                                <ul>
+                                    <li>Students and new grads: Always one page</li>
+                                    <li>Forces you to prioritize most important info</li>
+                                    <li>Easier for recruiters to scan quickly</li>
+                                    <li>Exception: Academic CVs (but that's different)</li>
+                                </ul>
+                            </div>
                         </div>
 
                         <div class="topic-section">
-                            <h3>Formatting Tools</h3>
-                            <ul>
-                                <li><strong>Overleaf:</strong> LaTeX-based professional templates</li>
-                                <li><strong>Canva:</strong> User-friendly design platform</li>
-                                <li><strong>Microsoft Word:</strong> Traditional formatting options</li>
-                                <li><strong>Google Docs:</strong> Collaborative editing features</li>
-                            </ul>
-                        </div>
-                    </div>
+                            <h3>Essential Resume Sections</h3>
+                            <div class="talking-points">
+                                <p><strong>Activity:</strong> "Let's build a resume structure together"</p>
+                                
+                                <h4>Must-Have Sections:</h4>
+                                <ul>
+                                    <li><strong>Header:</strong> Name, phone, email, LinkedIn, GitHub (if relevant)</li>
+                                    <li><strong>Education:</strong> School, degree, graduation date, GPA (if 3.5+)</li>
+                                    <li><strong>Experience:</strong> Jobs, internships, relevant work</li>
+                                    <li><strong>Projects:</strong> Personal, class, or team projects</li>
+                                    <li><strong>Skills:</strong> Technical skills, tools, languages</li>
+                                </ul>
 
-                    <div class="lesson-status">
-                        <div class="status-banner">
-                            <h3>Content In Development</h3>
-                            <p>This lesson page is currently being developed. Check back soon for:</p>
-                            <ul>
-                                <li>Resume templates and examples</li>
-                                <li>Interactive bullet point builder</li>
-                                <li>Before/after resume makeovers</li>
-                                <li>ATS optimization checklist</li>
-                                <li>Workshop recording and materials</li>
-                            </ul>
-                        </div>
-                    </div>
+                                <h4>Optional Sections (if space allows):</h4>
+                                <ul>
+                                    <li><strong>Leadership:</strong> Officer positions, team captain, etc.</li>
+                                    <li><strong>Awards:</strong> Scholarships, competitions, recognition</li>
+                                    <li><strong>Certifications:</strong> Relevant professional certifications</li>
+                                    <li><strong>Activities:</strong> Only if directly relevant to the role</li>
+                                </ul>
 
-                    <div class="lesson-resources">
-                        <h2>Resources & Materials</h2>
-                        <div class="resources-grid">
-                            <div class="resource-item">
-                                <h4>Resume Templates</h4>
-                                <p>Professional templates for different tools and styles</p>
-                                <span class="status-coming-soon">Coming Soon</span>
+                                <p><strong>What NOT to include:</strong> Objective statements, references, personal info, hobbies (unless relevant)</p>
                             </div>
-                            <div class="resource-item">
-                                <h4>Review Checklist</h4>
-                                <p>Comprehensive checklist for resume optimization</p>
-                                <span class="status-coming-soon">Coming Soon</span>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Writing Powerful Bullet Points</h3>
+                            <div class="talking-points">
+                                <p><strong>The Magic Formula:</strong> Action Verb + What You Did + Result/Impact</p>
+                                
+                                <h4>Strong Action Verbs:</h4>
+                                <ul>
+                                    <li><strong>Leadership:</strong> Led, managed, coordinated, supervised</li>
+                                    <li><strong>Achievement:</strong> Achieved, improved, increased, reduced</li>
+                                    <li><strong>Creation:</strong> Developed, designed, built, created</li>
+                                    <li><strong>Analysis:</strong> Analyzed, researched, evaluated, assessed</li>
+                                </ul>
+
+                                <h4>Quantify Everything:</h4>
+                                <ul>
+                                    <li>Numbers: "Managed team of 5 people"</li>
+                                    <li>Percentages: "Improved efficiency by 30%"</li>
+                                    <li>Time: "Completed project 2 weeks ahead of schedule"</li>
+                                    <li>Money: "Reduced costs by $10,000"</li>
+                                </ul>
+
+                                <h4>Before and After Examples:</h4>
+                                <p><strong>Weak:</strong> "Worked on a website for a class project"</p>
+                                <p><strong>Strong:</strong> "Developed responsive e-commerce website using HTML, CSS, and JavaScript, serving 100+ users with 95% uptime"</p>
+                                
+                                <p><strong>Weak:</strong> "Helped customers at retail job"</p>
+                                <p><strong>Strong:</strong> "Provided customer service to 50+ daily customers, maintaining 4.8/5 satisfaction rating and resolving 95% of issues on first contact"</p>
                             </div>
-                            <div class="resource-item">
-                                <h4>Workshop Materials</h4>
-                                <p>Hands-on exercises and improvement activities</p>
-                                <span class="status-coming-soon">Coming Soon</span>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Technical Skills Section</h3>
+                            <div class="talking-points">
+                                <p><strong>Question:</strong> "Should you list every programming language you've ever touched?"</p>
+                                
+                                <h4>Organize by Category:</h4>
+                                <ul>
+                                    <li><strong>Programming Languages:</strong> Java, Python, JavaScript, C++</li>
+                                    <li><strong>Web Technologies:</strong> HTML, CSS, React, Node.js</li>
+                                    <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB</li>
+                                    <li><strong>Tools & Platforms:</strong> Git, AWS, Docker, Linux</li>
+                                </ul>
+
+                                <h4>Proficiency Levels (Optional):</h4>
+                                <ul>
+                                    <li><strong>Proficient:</strong> Can work independently</li>
+                                    <li><strong>Familiar:</strong> Have used but need guidance</li>
+                                    <li><strong>Experienced:</strong> Multiple projects, can teach others</li>
+                                </ul>
+
+                                <p><strong>Pro Tip:</strong> Only list skills you can talk about in an interview!</p>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Projects Section: Your Secret Weapon</h3>
+                            <div class="talking-points">
+                                <p><strong>Why Projects Matter:</strong> They show you can actually build things!</p>
+                                
+                                <h4>What to Include:</h4>
+                                <ul>
+                                    <li>Personal projects you built for fun</li>
+                                    <li>Class projects (if substantial)</li>
+                                    <li>Hackathon projects</li>
+                                    <li>Open source contributions</li>
+                                </ul>
+
+                                <h4>How to Describe Projects:</h4>
+                                <ul>
+                                    <li><strong>Project Name:</strong> Give it a clear, descriptive name</li>
+                                    <li><strong>Technologies:</strong> What did you use to build it?</li>
+                                    <li><strong>Description:</strong> What does it do? What problem does it solve?</li>
+                                    <li><strong>Impact:</strong> Users, performance metrics, learning outcomes</li>
+                                </ul>
+
+                                <h4>Example Project Description:</h4>
+                                <p><strong>"Personal Finance Tracker"</strong> - Built web application using React and Node.js to help students track expenses and budgets, featuring user authentication, data visualization, and automated categorization of transactions</p>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Formatting and Tools</h3>
+                            <div class="talking-points">
+                                <p><strong>Question:</strong> "What tools do you currently use to create documents?"</p>
+                                
+                                <h4>Recommended Tools:</h4>
+                                <ul>
+                                    <li><strong>Google Docs:</strong> Easy collaboration, auto-save, accessible anywhere</li>
+                                    <li><strong>Microsoft Word:</strong> Professional templates, advanced formatting</li>
+                                    <li><strong>Canva:</strong> Beautiful templates, easy to use</li>
+                                    <li><strong>Overleaf (LaTeX):</strong> Perfect formatting, but steeper learning curve</li>
+                                </ul>
+
+                                <h4>Formatting Best Practices:</h4>
+                                <ul>
+                                    <li>Use standard fonts: Arial, Calibri, Times New Roman</li>
+                                    <li>Font size: 10-12pt for body, 14-16pt for name</li>
+                                    <li>Consistent spacing and alignment</li>
+                                    <li>Plenty of white space - don't cram everything</li>
+                                    <li>Save as PDF to preserve formatting</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Common Resume Mistakes</h3>
+                            <div class="talking-points">
+                                <p><strong>Let's Review Some Real Examples (Anonymized)</strong></p>
+                                
+                                <h4>Formatting Mistakes:</h4>
+                                <ul>
+                                    <li>Using tables or columns (ATS can't read them)</li>
+                                    <li>Fancy fonts or colors</li>
+                                    <li>Including photos or graphics</li>
+                                    <li>Inconsistent formatting</li>
+                                </ul>
+
+                                <h4>Content Mistakes:</h4>
+                                <ul>
+                                    <li>Listing responsibilities instead of achievements</li>
+                                    <li>Using weak action verbs ("Helped with...")</li>
+                                    <li>No quantification or specific details</li>
+                                    <li>Including irrelevant information</li>
+                                </ul>
+
+                                <h4>Technical Mistakes:</h4>
+                                <ul>
+                                    <li>Listing skills you can't discuss</li>
+                                    <li>No GitHub or portfolio links</li>
+                                    <li>Outdated or broken contact information</li>
+                                    <li>Typos and grammatical errors</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Resume Review Workshop</h3>
+                            <div class="talking-points">
+                                <p><strong>Hands-On Activity:</strong> Let's improve real resumes together</p>
+                                
+                                <h4>Peer Review Process:</h4>
+                                <ol>
+                                    <li>Partner up with someone</li>
+                                    <li>Exchange resumes (or drafts)</li>
+                                    <li>Use our checklist to review</li>
+                                    <li>Provide specific, actionable feedback</li>
+                                    <li>Discuss improvements together</li>
+                                </ol>
+
+                                <h4>Review Checklist:</h4>
+                                <ul>
+                                    <li>Is it easy to scan in 6 seconds?</li>
+                                    <li>Are bullet points action-oriented and quantified?</li>
+                                    <li>Is the formatting clean and consistent?</li>
+                                    <li>Are technical skills relevant and accurate?</li>
+                                    <li>Do projects show real impact?</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Action Items for This Week</h3>
+                            <div class="talking-points">
+                                <p><strong>Homework Assignment:</strong></p>
+                                <ol>
+                                    <li><strong>Resume Audit:</strong> Review your current resume using our checklist</li>
+                                    <li><strong>Bullet Point Rewrite:</strong> Improve 5 bullet points using action verbs and quantification</li>
+                                    <li><strong>Skills Update:</strong> Organize your technical skills by category</li>
+                                    <li><strong>Project Documentation:</strong> Write descriptions for 2-3 projects</li>
+                                    <li><strong>Format Check:</strong> Ensure your resume is ATS-friendly</li>
+                                </ol>
+                                
+                                <p><strong>Next Week Preview:</strong> We'll cover LinkedIn optimization and online presence!</p>
                             </div>
                         </div>
                     </div>

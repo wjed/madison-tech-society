@@ -1601,3 +1601,44 @@ section h3 {
         align-items: flex-start;
     }
 }
+
+/* Enhanced Lesson Page Styles */
+.discussion-topics {
+    margin-bottom: 3rem;
+}
+
+.talking-points {
+    background: #F4EFE1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.talking-points h4 {
+    color: #009698;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.talking-points h4:first-child {
+    margin-top: 0;
+}
+
+.talking-points p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.talking-points strong {
+    color: #450084;
+}
+
+.talking-points ul, .talking-points ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.talking-points li {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
