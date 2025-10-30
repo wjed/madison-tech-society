@@ -1757,4 +1757,435 @@ section h3 {
     .apply-buttons .btn {
         width: 200px;
     }
+}/* Contact
+ Page Redesign */
+.contact-content {
+    padding: 4rem 0;
+}
+
+.contact-hero {
+    background: linear-gradient(135deg, #009698 0%, #8EE4D7 100%);
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.contact-hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contact-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.contact-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.contact-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #8EE4D7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 150, 152, 0.15);
+}
+
+.contact-card.primary {
+    border-color: #009698;
+    background: linear-gradient(135deg, #009698 0%, #8EE4D7 100%);
+    color: white;
+}
+
+.contact-card.primary .contact-icon {
+    color: white;
+}
+
+.contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: rgba(0, 150, 152, 0.1);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    color: #009698;
+}
+
+.contact-card.primary .contact-icon {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contact-card h3 {
+    color: #009698;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.contact-card.primary h3 {
+    color: white;
+}
+
+.contact-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.contact-card.primary p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-link {
+    color: #009698;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.contact-card.primary .contact-link {
+    color: white;
+}
+
+.contact-link:hover {
+    border-bottom-color: currentColor;
+}
+
+.location-details, .schedule-details {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #009698;
+}
+
+.contact-card.primary .location-details,
+.contact-card.primary .schedule-details {
+    background: rgba(255, 255, 255, 0.1);
+    border-left-color: white;
+}
+
+.attendance-note {
+    color: #ff6b35;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.contact-card.primary .attendance-note {
+    color: #ffeb3b;
+}
+
+.social-links-modern {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-link-modern {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-link-modern.instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+}
+
+.social-link-modern.linkedin {
+    background: #0077b5;
+    color: white;
+}
+
+.social-link-modern:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Leadership Recruitment Redesign */
+.leadership-recruitment {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+}
+
+.recruitment-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.recruitment-header h2 {
+    font-size: 2.5rem;
+    color: #009698;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.recruitment-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.recruitment-hero {
+    background: linear-gradient(135deg, #009698 0%, #8EE4D7 100%);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.recruitment-hero-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.recruitment-hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recruitment-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.benefit-icon {
+    font-size: 1.2rem;
+}
+
+.positions-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.position-card-modern {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.position-card-modern:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 150, 152, 0.15);
+    border-color: #8EE4D7;
+}
+
+.position-card-modern.featured {
+    border-color: #009698;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fffe 100%);
+}
+
+.position-card-modern.featured::before {
+    content: "⭐ Featured";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #009698;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.position-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.position-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(0, 150, 152, 0.1);
+    border-radius: 12px;
+    color: #009698;
+    flex-shrink: 0;
+}
+
+.position-title-area {
+    flex: 1;
+}
+
+.position-title-area h3 {
+    color: #009698;
+    margin-bottom: 0.25rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.position-badge {
+    background: #8EE4D7;
+    color: #009698;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.position-card-modern .position-description {
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.position-card-modern .position-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.position-card-modern .skill-tag {
+    background: #f0f0f0;
+    color: #666;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.position-card-modern:hover .skill-tag {
+    background: #8EE4D7;
+    color: #009698;
+}
+
+.recruitment-cta {
+    background: white;
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 2px solid #009698;
+    box-shadow: 0 8px 25px rgba(0, 150, 152, 0.1);
+}
+
+.cta-content h3 {
+    color: #009698;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.cta-content p {
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 768px) {
+    .contact-hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .recruitment-header h2 {
+        font-size: 2rem;
+    }
+    
+    .recruitment-benefits {
+        gap: 1rem;
+    }
+    
+    .benefit-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .positions-showcase {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .position-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 250px;
+    }
+    
+    .social-links-modern {
+        flex-direction: column;
+        align-items: center;
+    }
 }
