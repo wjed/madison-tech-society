@@ -627,6 +627,76 @@ section h3 {
     line-height: 1.6;
 }
 
+/* Members List */
+.members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.member-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #8EE4D7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.member-initial {
+    width: 40px;
+    height: 40px;
+    background: #450084;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.member-name {
+    font-weight: 500;
+    color: #333333;
+}
+
+.membership-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.stat-item {
+    background: #F4EFE1;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #8EE4D7;
+}
+
+.stat-item h3 {
+    font-family: 'Artegra Slab', serif;
+    font-size: 2.5rem;
+    color: #450084;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    color: #333333;
+    font-weight: 500;
+}
+
 .filter-controls {
     display: flex;
     gap: 1rem;
@@ -1098,5 +1168,13 @@ section h3 {
     .leader-photo img {
         width: 100px;
         height: 100px;
+    }
+    
+    .members-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .membership-stats {
+        grid-template-columns: 1fr;
     }
 }
