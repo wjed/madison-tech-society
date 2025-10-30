@@ -740,8 +740,17 @@ section h3 {
 }
 
 .social-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #009698;
+    background: #8EE4D7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
 }
 
 .social-link-card h3 {
