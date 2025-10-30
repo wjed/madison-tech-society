@@ -1641,8 +1641,9 @@ section h3 {
 .talking-points li {
     margin: 0.5rem 0;
     line-height: 1.5;
-}/
-* Open Positions Section */
+}
+
+/* Open Positions Section */
 .open-positions {
     background: #f8f9fa;
     padding: 4rem 0;
