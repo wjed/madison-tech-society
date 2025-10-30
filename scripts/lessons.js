@@ -150,4 +150,103 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+});// I
+nteractive reveal functionality for lessons
+function toggleReveal(elementId) {
+    const element = document.getElementById(elementId);
+    const button = element.previousElementSibling;
+    
+    if (element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
+        element.style.animation = 'slideDown 0.3s ease-out';
+        button.textContent = button.textContent.replace('Click to Reveal:', 'Click to Hide:');
+        button.classList.add('revealed');
+    } else {
+        element.style.display = 'none';
+        button.textContent = button.textContent.replace('Click to Hide:', 'Click to Reveal:');
+        button.classList.remove('revealed');
+    }
+}
+
+// Add styles for interactive reveals
+document.addEventListener('DOMContentLoaded', function() {
+    const revealStyles = document.createElement('style');
+    revealStyles.textContent = `
+        .interactive-reveal {
+            margin: 1.5rem 0;
+        }
+        
+        .reveal-btn {
+            background: linear-gradient(135deg, #009698 0%, #8EE4D7 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .reveal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 150, 152, 0.3);
+        }
+        
+        .reveal-btn.revealed {
+            background: linear-gradient(135deg, #8EE4D7 0%, #009698 100%);
+        }
+        
+        .reveal-content {
+            background: #f8f9fa;
+            border: 2px solid #8EE4D7;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .reveal-content h4 {
+            color: #009698;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .reveal-content ul {
+            margin-left: 1.5rem;
+        }
+        
+        .reveal-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                max-height: 1000px;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Mobile responsiveness for reveals */
+        @media (max-width: 768px) {
+            .reveal-btn {
+                font-size: 0.9rem;
+                padding: 10px 16px;
+            }
+            
+            .reveal-content {
+                padding: 1rem;
+            }
+        }
+    `;
+    document.head.appendChild(revealStyles);
 });
