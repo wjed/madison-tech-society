@@ -103,40 +103,42 @@ body {
 }
 
 .btn-primary {
-    background: #450084;
+    background: #009698;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #009698;
+    background: #8EE4D7;
+    color: #333333;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: #F4EFE1;
-    color: #450084;
-    border: 2px solid #450084;
+    background: #8EE4D7;
+    color: #333333;
+    border: 2px solid #009698;
 }
 
 .btn-secondary:hover {
-    background: #450084;
+    background: #009698;
     color: white;
 }
 
 .btn-outline {
     background: transparent;
     color: #009698;
-    border: 2px solid #8EE4D7;
+    border: 2px solid #009698;
 }
 
 .btn-outline:hover {
-    border-color: #009698;
+    border-color: #8EE4D7;
     background: #8EE4D7;
+    color: #333333;
 }
 
 /* Hero Section */
 .hero {
-    background: #450084;
+    background: #009698;
     color: white;
     padding: 150px 0 100px;
     text-align: center;
@@ -164,7 +166,7 @@ body {
 
 /* Page Header */
 .page-header {
-    background: #450084;
+    background: #009698;
     color: white;
     padding: 120px 0 80px;
     text-align: center;
@@ -193,7 +195,7 @@ section h2 {
     font-weight: bold;
     margin-bottom: 3rem;
     text-align: center;
-    color: #333333;
+    color: #009698;
 }
 
 section h3 {
@@ -201,7 +203,7 @@ section h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #450084;
+    color: #009698;
 }
 
 /* Mission Section */
@@ -240,7 +242,7 @@ section h3 {
 }
 
 .highlight-card h3 {
-    color: #450084;
+    color: #009698;
     margin-bottom: 0.5rem;
 }
 
@@ -306,7 +308,7 @@ section h3 {
 .timeline-marker {
     width: 20px;
     height: 20px;
-    background: #450084;
+    background: #009698;
     border-radius: 50%;
     margin-right: 2rem;
     margin-top: 0.5rem;
@@ -314,7 +316,7 @@ section h3 {
 }
 
 .timeline-content h4 {
-    color: #450084;
+    color: #009698;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -343,7 +345,7 @@ section h3 {
 .placeholder-photo {
     width: 80px;
     height: 80px;
-    background: #450084;
+    background: #009698;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -421,7 +423,7 @@ section h3 {
 }
 
 .lesson-overview {
-    background: #F4EFE1;
+    background: #8EE4D7;
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 3rem;
@@ -462,7 +464,7 @@ section h3 {
 }
 
 .topic-section h3 {
-    color: #450084;
+    color: #009698;
     margin-bottom: 1rem;
 }
 
@@ -501,7 +503,7 @@ section h3 {
 }
 
 .resource-item h4 {
-    color: #450084;
+    color: #009698;
     margin-bottom: 0.5rem;
 }
 
@@ -544,8 +546,8 @@ section h3 {
 }
 
 .leader-card.founder {
-    border-color: #450084;
-    box-shadow: 0 8px 25px rgba(69, 0, 132, 0.15);
+    border-color: #009698;
+    box-shadow: 0 8px 25px rgba(0, 150, 152, 0.15);
 }
 
 .leader-photo {
@@ -561,11 +563,11 @@ section h3 {
 }
 
 .founder .leader-photo img {
-    border-color: #450084;
+    border-color: #009698;
 }
 
 .leader-info h3 {
-    color: #450084;
+    color: #009698;
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
 }
@@ -590,7 +592,7 @@ section h3 {
 }
 
 .leadership-mission h2 {
-    color: #450084;
+    color: #009698;
     margin-bottom: 2rem;
 }
 
@@ -617,7 +619,7 @@ section h3 {
 }
 
 .value-item h4 {
-    color: #450084;
+    color: #009698;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -654,7 +656,7 @@ section h3 {
 .member-initial {
     width: 40px;
     height: 40px;
-    background: #450084;
+    background: #009698;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -688,7 +690,7 @@ section h3 {
 .stat-item h3 {
     font-family: 'Artegra Slab', serif;
     font-size: 2.5rem;
-    color: #450084;
+    color: #009698;
     margin-bottom: 0.5rem;
 }
 
@@ -716,7 +718,7 @@ section h3 {
 .search-input:focus,
 .filter-select:focus {
     outline: none;
-    border-color: #450084;
+    border-color: #009698;
 }
 
 .lessons-grid {
@@ -749,7 +751,7 @@ section h3 {
 }
 
 .lesson-tag {
-    background: #450084;
+    background: #009698;
     color: white;
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -780,8 +782,8 @@ section h3 {
 }
 
 .resource-link {
-    background: #F4EFE1;
-    color: #450084;
+    background: #8EE4D7;
+    color: #333333;
     padding: 0.5rem 1rem;
     border-radius: 6px;
     text-decoration: none;
@@ -791,7 +793,8 @@ section h3 {
 }
 
 .resource-link:hover {
-    background: #8EE4D7;
+    background: #009698;
+    color: white;
 }
 
 /* Events Page */
@@ -818,8 +821,8 @@ section h3 {
 }
 
 .event-card.featured {
-    border-color: #450084;
-    box-shadow: 0 8px 25px rgba(69, 0, 132, 0.15);
+    border-color: #009698;
+    box-shadow: 0 8px 25px rgba(0, 150, 152, 0.15);
 }
 
 .event-date {
@@ -829,7 +832,7 @@ section h3 {
 
 .event-date .month {
     display: block;
-    background: #450084;
+    background: #009698;
     color: white;
     padding: 0.5rem;
     border-radius: 8px 8px 0 0;
@@ -839,13 +842,13 @@ section h3 {
 
 .event-date .day {
     display: block;
-    background: #F4EFE1;
-    color: #450084;
+    background: #8EE4D7;
+    color: #333333;
     padding: 0.75rem;
     border-radius: 0 0 8px 8px;
     font-weight: 700;
     font-size: 1.5rem;
-    border: 2px solid #450084;
+    border: 2px solid #009698;
     border-top: none;
 }
 
@@ -923,7 +926,7 @@ section h3 {
 }
 
 .step-number {
-    background: #450084;
+    background: #009698;
     color: white;
     width: 40px;
     height: 40px;
@@ -971,7 +974,7 @@ section h3 {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #009698;
 }
 
 .checkbox-group {
@@ -1049,7 +1052,7 @@ section h3 {
 }
 
 .newsletter {
-    background: #450084;
+    background: #009698;
     color: white;
     text-align: center;
 }
