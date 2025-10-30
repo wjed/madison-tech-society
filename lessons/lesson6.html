@@ -10,13 +10,29 @@
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo"><h2>MTS</h2></div>
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+                </a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../about.html" class="nav-link">About</a></li>
-                <li><a href="../members.html" class="nav-link">Members</a></li>
-                <li><a href="../lessons.html" class="nav-link active">Lessons</a></li>
-                <li><a href="../events.html" class="nav-link">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../leadership.html">Leadership</a></li>
+                        <li><a href="../members.html">Members</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">Education</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../lessons.html">Lessons</a></li>
+                        <li><a href="../events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="../homework.html" class="nav-link">Homework</a></li>
                 <li><a href="../join.html" class="nav-link">Join Us</a></li>
                 <li><a href="../contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -42,7 +58,7 @@
                 <div class="lesson-main">
                     <div class="lesson-overview">
                         <h2>Lesson Overview</h2>
-                        <p>Navigate the internship application process without getting overwhelmed. Learn where to find opportunities, how to track applications, and strategies for applying strategically.</p>
+                        <p>Navigate the internship application process strategically and systematically. Learn where to find the best opportunities, how to track applications effectively, and master the art of applying when you don't meet every requirement.</p>
                         
                         <div class="lesson-tags">
                             <span class="lesson-tag">Job Search</span>
@@ -50,10 +66,211 @@
                         </div>
                     </div>
 
-                    <div class="lesson-status">
-                        <div class="status-banner">
-                            <h3>🚧 Content In Development</h3>
-                            <p>This lesson page is currently being developed. Check back soon for complete materials and resources!</p>
+                    <div class="discussion-topics">
+                        <h2>Discussion Topics & Talking Points</h2>
+                        
+                        <div class="topic-section">
+                            <h3>Opening: The Application Game Reality Check</h3>
+                            <div class="talking-points">
+                                <p><strong>Question:</strong> "How many internship applications do you think you need to send to get one offer?"</p>
+                                <ul>
+                                    <li>Most students guess 10-20</li>
+                                    <li>Reality: Often 100-200+ applications for competitive roles</li>
+                                    <li>It's a numbers game, but strategy matters more than volume</li>
+                                    <li>Quality applications to right companies beat spray-and-pray</li>
+                                </ul>
+                                <p><strong>Mindset Shift:</strong> Rejection is not personal - it's just part of the process!</p>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Beyond LinkedIn: Where to Actually Find Internships</h3>
+                            <div class="talking-points">
+                                <p><strong>The Hidden Job Market</strong></p>
+                                
+                                <h4>Company Career Pages (Most Important!):</h4>
+                                <ul>
+                                    <li>Go directly to company websites</li>
+                                    <li>Set up job alerts for new postings</li>
+                                    <li>Apply within 24-48 hours of posting</li>
+                                    <li>Often less competition than job boards</li>
+                                </ul>
+
+                                <h4>University Resources:</h4>
+                                <ul>
+                                    <li><strong>JMU Career Services:</strong> Handshake platform, exclusive postings</li>
+                                    <li><strong>Department Job Boards:</strong> CS department often has exclusive opportunities</li>
+                                    <li><strong>Professor Connections:</strong> Industry contacts and research opportunities</li>
+                                    <li><strong>Alumni Network:</strong> JMU grads who can provide referrals</li>
+                                </ul>
+
+                                <h4>Specialized Job Boards:</h4>
+                                <ul>
+                                    <li><strong>AngelList:</strong> Startup internships and early-stage companies</li>
+                                    <li><strong>Glassdoor:</strong> Company reviews and salary information</li>
+                                    <li><strong>Indeed:</strong> Broad search with good filtering options</li>
+                                    <li><strong>ZipRecruiter:</strong> AI-powered matching</li>
+                                    <li><strong>WayUp:</strong> Specifically for students and recent grads</li>
+                                    <li><strong>Forage:</strong> Virtual work experiences that can lead to internships</li>
+                                </ul>
+
+                                <h4>Industry-Specific Platforms:</h4>
+                                <ul>
+                                    <li><strong>Tech:</strong> Stack Overflow Jobs, AngelList, Hired</li>
+                                    <li><strong>Finance:</strong> eFinancialCareers, Wall Street Oasis</li>
+                                    <li><strong>Consulting:</strong> Management Consulted, Vault</li>
+                                    <li><strong>Government:</strong> USAJobs, ClearanceJobs</li>
+                                </ul>
+
+                                <h4>Networking-Based Opportunities:</h4>
+                                <ul>
+                                    <li>Referrals from your professional network</li>
+                                    <li>Career fair connections and follow-ups</li>
+                                    <li>Informational interviews that turn into opportunities</li>
+                                    <li>Professor recommendations and research lab positions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Application Tracking and Organization</h3>
+                            <div class="talking-points">
+                                <p><strong>Stay Organized or Get Overwhelmed</strong></p>
+                                
+                                <h4>Essential Tracking Information:</h4>
+                                <ul>
+                                    <li><strong>Company Name:</strong> Full company name and division</li>
+                                    <li><strong>Position Title:</strong> Exact title from job posting</li>
+                                    <li><strong>Application Date:</strong> When you submitted</li>
+                                    <li><strong>Application Method:</strong> Company website, LinkedIn, referral, etc.</li>
+                                    <li><strong>Status:</strong> Applied, Phone Screen, Interview, Rejected, Offer</li>
+                                    <li><strong>Contact Person:</strong> Recruiter or hiring manager name</li>
+                                    <li><strong>Follow-up Dates:</strong> When to check in</li>
+                                    <li><strong>Notes:</strong> Key details about role, company, interview feedback</li>
+                                </ul>
+
+                                <h4>Tracking Tools:</h4>
+                                <ul>
+                                    <li><strong>Google Sheets:</strong> Free, collaborative, accessible anywhere</li>
+                                    <li><strong>Notion:</strong> More advanced with templates and automation</li>
+                                    <li><strong>Airtable:</strong> Database-like functionality with great filtering</li>
+                                    <li><strong>Huntr:</strong> Specialized job search tracking tool</li>
+                                </ul>
+
+                                <h4>Application Workflow:</h4>
+                                <ol>
+                                    <li><strong>Find opportunity</strong> and add to tracker immediately</li>
+                                    <li><strong>Research company</strong> and save key information</li>
+                                    <li><strong>Customize resume</strong> and cover letter for role</li>
+                                    <li><strong>Submit application</strong> and update tracker</li>
+                                    <li><strong>Set follow-up reminder</strong> for 1-2 weeks later</li>
+                                    <li><strong>Track all communications</strong> and update status</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Comprehensive 2-Week Application Blitz</h3>
+                            <div class="talking-points">
+                                <p><strong>Your Strategic Internship Application Campaign</strong></p>
+                                
+                                <h4>Week 1: Research and Preparation</h4>
+                                <p><strong>Days 1-2: Market Research and Target Identification</strong></p>
+                                <ul>
+                                    <li>Research and compile a list of 100 target companies across different industries</li>
+                                    <li>Categorize companies by size (startup, mid-size, enterprise) and industry</li>
+                                    <li>Create detailed profiles for your top 20 companies including culture, values, recent news</li>
+                                    <li>Identify 50 specific internship opportunities currently posted</li>
+                                    <li>Set up job alerts on 10 different platforms for your target roles</li>
+                                </ul>
+
+                                <p><strong>Days 3-4: Application Materials Optimization</strong></p>
+                                <ul>
+                                    <li>Create 5 different resume versions tailored to different role types</li>
+                                    <li>Write 3 master cover letter templates for different company sizes/types</li>
+                                    <li>Develop a portfolio of 10 different project descriptions for various audiences</li>
+                                    <li>Create a personal website showcasing your best work</li>
+                                    <li>Prepare answers to 20 common application questions</li>
+                                </ul>
+
+                                <p><strong>Days 5-7: Application System Setup and Initial Wave</strong></p>
+                                <ul>
+                                    <li>Set up comprehensive application tracking system</li>
+                                    <li>Submit 25 high-quality applications to your top-choice companies</li>
+                                    <li>Research and connect with 15 employees at your target companies</li>
+                                    <li>Set up Google Alerts for your target companies to stay informed</li>
+                                    <li>Create calendar reminders for all follow-up activities</li>
+                                </ul>
+
+                                <h4>Week 2: Volume and Follow-up</h4>
+                                <p><strong>Days 8-10: High-Volume Application Period</strong></p>
+                                <ul>
+                                    <li>Submit 50 additional applications using your optimized materials</li>
+                                    <li>Customize each application with specific company research</li>
+                                    <li>Follow up on applications submitted 1-2 weeks ago</li>
+                                    <li>Attend 2 virtual career fairs or company information sessions</li>
+                                    <li>Conduct 3 informational interviews with employees at target companies</li>
+                                </ul>
+
+                                <p><strong>Days 11-12: Networking and Referral Generation</strong></p>
+                                <ul>
+                                    <li>Reach out to 20 professionals for informational interviews</li>
+                                    <li>Ask your network for referrals to specific companies</li>
+                                    <li>Engage with company social media and employee content</li>
+                                    <li>Join relevant professional groups and online communities</li>
+                                    <li>Attend industry meetups or virtual events</li>
+                                </ul>
+
+                                <p><strong>Days 13-14: Analysis and Strategy Refinement</strong></p>
+                                <ul>
+                                    <li>Analyze your application success rates by company type, role, and method</li>
+                                    <li>Identify patterns in rejections and areas for improvement</li>
+                                    <li>Update your materials based on feedback and results</li>
+                                    <li>Plan your next wave of applications based on learnings</li>
+                                    <li>Create a 3-month application strategy going forward</li>
+                                </ul>
+
+                                <h4>Required Deliverables:</h4>
+                                <ol>
+                                    <li><strong>Application Tracking Spreadsheet:</strong> 75+ applications with full details</li>
+                                    <li><strong>Company Research Database:</strong> Detailed profiles of 20 top-choice companies</li>
+                                    <li><strong>Customized Resume Collection:</strong> 5 different versions for different role types</li>
+                                    <li><strong>Cover Letter Templates:</strong> 3 master templates with examples</li>
+                                    <li><strong>Personal Website/Portfolio:</strong> Professional site showcasing your work</li>
+                                    <li><strong>Networking Outreach Log:</strong> Record of all professional contacts made</li>
+                                    <li><strong>Application Success Analysis:</strong> Data-driven insights on what's working</li>
+                                    <li><strong>3-Month Application Strategy:</strong> Plan for continued job search efforts</li>
+                                </ol>
+
+                                <h4>Success Metrics:</h4>
+                                <ul>
+                                    <li><strong>Volume:</strong> 75+ applications submitted</li>
+                                    <li><strong>Quality:</strong> 100% customized applications (no generic submissions)</li>
+                                    <li><strong>Response Rate:</strong> Track and aim for 10%+ response rate</li>
+                                    <li><strong>Networking:</strong> 25+ new professional connections made</li>
+                                    <li><strong>Interviews:</strong> Goal of 3+ phone screens or interviews</li>
+                                </ul>
+
+                                <h4>Bonus Achievements:</h4>
+                                <ul>
+                                    <li>Receive a referral from someone in your network</li>
+                                    <li>Get invited to an on-site or final round interview</li>
+                                    <li>Receive positive feedback on your application materials</li>
+                                    <li>Land an informational interview that leads to an opportunity</li>
+                                    <li>Get featured or mentioned by a company on social media</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Homework Submission Reminder</h3>
+                            <div class="talking-points">
+                                <p><strong>Submit Your Application Blitz Results!</strong></p>
+                                <p>After completing your 2-week application campaign, submit your homework through the <strong>Homework</strong> tab. This is a major assignment that demonstrates your commitment to landing an internship!</p>
+                                
+                                <p><strong>Submission Deadline:</strong> Two weeks from today's meeting</p>
+                                <p><strong>This assignment counts as double points - make it count!</strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
