@@ -1505,11 +1505,69 @@ section h3 {
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: #f8f9fa;
+        margin-top: 0.5rem;
+        border-radius: 8px;
+        padding: 1rem 0;
+    }
+
+    .dropdown-toggle::after {
         display: none;
     }
     
     .hamburger {
         display: flex;
+        z-index: 1001;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
     
     .hero h1 {
@@ -2187,5 +2245,531 @@ section h3 {
     .social-links-modern {
         flex-direction: column;
         align-items: center;
+    }
+}
+/* Co
+mprehensive Mobile Responsiveness */
+
+/* Mobile First - Base mobile styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Typography adjustments */
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .page-header p {
+        font-size: 1rem;
+    }
+
+    /* Button adjustments */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 280px;
+        margin: 0.5rem auto;
+        display: block;
+        text-align: center;
+    }
+
+    .btn-large {
+        padding: 14px 24px;
+        font-size: 1rem;
+    }
+
+    /* Hero section mobile */
+    .hero {
+        padding: 6rem 0 4rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /* Navigation mobile improvements */
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    /* Page headers */
+    .page-header {
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+
+    /* Grid layouts */
+    .about-grid,
+    .contact-grid,
+    .leadership-grid,
+    .positions-grid,
+    .contact-cards-grid,
+    .positions-showcase {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Cards */
+    .leader-card,
+    .contact-card,
+    .position-card,
+    .position-card-modern {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .leader-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .leader-photo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Forms */
+    .newsletter-form,
+    .contact-form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .newsletter-form input,
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        min-width: auto;
+    }
+
+    /* Lesson content */
+    .lesson-nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .lesson-nav .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .topic-section {
+        padding: 1.5rem;
+    }
+
+    .talking-points ul,
+    .talking-points ol {
+        padding-left: 1.5rem;
+    }
+
+    /* Tables */
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Contact page mobile */
+    .contact-hero {
+        padding: 2.5rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Leadership recruitment mobile */
+    .recruitment-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .recruitment-hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .recruitment-hero-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .recruitment-benefits {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .benefit-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+
+    /* Position cards mobile */
+    .position-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .position-icon {
+        align-self: center;
+    }
+
+    /* Social links */
+    .social-links-modern {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .social-link-modern {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    /* CTA sections */
+    .cta-buttons,
+    .apply-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .cta-buttons .btn,
+    .apply-buttons .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    /* Homework page */
+    .assignment-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /* Events page */
+    .event-card {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .event-date {
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
+    .calendar-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    /* Members page */
+    .members-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .membership-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Lessons page */
+    .lessons-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* About page */
+    .about-content {
+        padding: 3rem 0;
+    }
+
+    /* Join page */
+    .join-content {
+        padding: 3rem 0;
+    }
+
+    /* Utility classes for mobile */
+    .mobile-center {
+        text-align: center;
+    }
+
+    .mobile-full-width {
+        width: 100%;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    /* Grid adjustments for tablet */
+    .about-grid,
+    .contact-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .positions-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .leadership-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Typography for tablet */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Buttons for tablet */
+    .btn {
+        padding: 12px 24px;
+        width: auto;
+        display: inline-block;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    /* Cards for tablet */
+    .leader-card {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .leader-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Large mobile/small tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    /* Adjust grid columns for larger tablets */
+    .positions-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .contact-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Touch device improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Increase touch targets */
+    .btn,
+    .nav-link,
+    .social-link-modern {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Remove hover effects on touch devices */
+    .leader-card:hover,
+    .contact-card:hover,
+    .position-card:hover,
+    .position-card-modern:hover {
+        transform: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Improve dropdown behavior on touch */
+    .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: 4rem 0 2rem;
+    }
+
+    .page-header {
+        padding: 4rem 0 2rem;
+    }
+
+    .nav-menu {
+        height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hamburger,
+    .btn,
+    .footer {
+        display: none;
+    }
+
+    .page-header {
+        padding: 2rem 0 1rem;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0;
+    }
+}/
+* Touch device specific styles */
+.touch-device .btn:active,
+.touch-device .nav-link:active,
+.touch-device .social-link-modern:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+.touch-device .leader-card:active,
+.touch-device .contact-card:active,
+.touch-device .position-card-modern:active {
+    transform: scale(0.99);
+    transition: transform 0.1s ease;
+}
+
+/* Ensure proper spacing on very small screens */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    .contact-hero,
+    .recruitment-hero {
+        padding: 2rem 1rem;
+    }
+    
+    .leader-card,
+    .contact-card,
+    .position-card-modern {
+        padding: 1rem;
+    }
+}
+
+/* Accessibility improvements for mobile */
+@media (max-width: 768px) {
+    /* Ensure focus states are visible */
+    .btn:focus,
+    .nav-link:focus,
+    input:focus,
+    textarea:focus {
+        outline: 2px solid #009698;
+        outline-offset: 2px;
+    }
+    
+    /* Improve readability */
+    body {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Better spacing for touch */
+    .nav-menu li {
+        margin: 0.5rem 0;
+    }
+    
+    .nav-link {
+        padding: 1rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
