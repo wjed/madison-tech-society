@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 10: Real Talk with Recruiters & Engineers - Madison Tech Society</title>
+    <title>Lesson 10: Handling Offers, Rejections, and Negotiations - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo"><h2>MTS</h2></div>
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+                </a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../about.html" class="nav-link">About</a></li>
-                <li><a href="../members.html" class="nav-link">Members</a></li>
-                <li><a href="../lessons.html" class="nav-link active">Lessons</a></li>
-                <li><a href="../events.html" class="nav-link">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../leadership.html">Leadership</a></li>
+                        <li><a href="../members.html">Members</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">Education</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../lessons.html">Lessons</a></li>
+                        <li><a href="../events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="../homework.html" class="nav-link">Homework</a></li>
                 <li><a href="../join.html" class="nav-link">Join Us</a></li>
                 <li><a href="../contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -27,7 +43,7 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Real Talk with Recruiters & Engineers</h1>
+                <h1>Handling Offers, Rejections, and Negotiations</h1>
                 <p>Lesson 10 - Spring Semester</p>
             </div>
         </section>
@@ -42,18 +58,422 @@
                 <div class="lesson-main">
                     <div class="lesson-overview">
                         <h2>Lesson Overview</h2>
-                        <p>Join us for an exclusive panel discussion with industry professionals, hiring managers, and MTS alumni. Get insider insights on hiring processes, resume tips, and "what I wish I knew" advice.</p>
+                        <p>Navigate the final stages of the job search process with confidence. Learn to evaluate offers, negotiate effectively, handle rejections professionally, and make decisions that align with your career goals.</p>
                         
                         <div class="lesson-tags">
-                            <span class="lesson-tag">Industry Panel</span>
-                            <span class="lesson-tag">Professional Insights</span>
+                            <span class="lesson-tag">Salary Negotiation</span>
+                            <span class="lesson-tag">Decision Making</span>
                         </div>
                     </div>
 
-                    <div class="lesson-status">
-                        <div class="status-banner">
-                            <h3>🚧 Content In Development</h3>
-                            <p>This lesson page is currently being developed. Check back soon for complete materials and resources!</p>
+                    <div class="discussion-topics">
+                        <h2>Discussion Topics & Talking Points</h2>
+                        
+                        <div class="topic-section">
+                            <h3>Opening: The Emotional Rollercoaster of Job Searching</h3>
+                            <div class="talking-points">
+                                <p><strong>Question:</strong> "What emotions do you expect to feel when you get your first job offer? Your first rejection?"</p>
+                                <ul>
+                                    <li><strong>Offer emotions:</strong> Excitement, relief, anxiety, imposter syndrome</li>
+                                    <li><strong>Rejection emotions:</strong> Disappointment, self-doubt, frustration, motivation</li>
+                                    <li>Both are normal parts of the process</li>
+                                    <li>Your response to both determines your success</li>
+                                </ul>
+                                <p><strong>Reality Check:</strong> How you handle these moments can be more important than the moments themselves!</p>
+                                
+                                <h4>The Psychology of Job Search Outcomes:</h4>
+                                <ul>
+                                    <li><strong>Offers aren't always victories:</strong> Wrong fit can hurt your career</li>
+                                    <li><strong>Rejections aren't always failures:</strong> Often about fit, not ability</li>
+                                    <li><strong>Timing matters:</strong> Right opportunity at wrong time vs. wrong opportunity at right time</li>
+                                    <li><strong>Long-term perspective:</strong> Your first job isn't your last job</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Evaluating Job Offers Holistically</h3>
+                            <div class="talking-points">
+                                <p><strong>Beyond the Salary Number</strong></p>
+                                
+                                <h4>The Complete Compensation Package:</h4>
+                                <ul>
+                                    <li><strong>Base Salary:</strong> Your guaranteed annual income</li>
+                                    <li><strong>Signing Bonus:</strong> One-time payment (often with clawback clauses)</li>
+                                    <li><strong>Annual Bonus:</strong> Performance-based additional compensation</li>
+                                    <li><strong>Equity/Stock Options:</strong> Ownership stake in the company</li>
+                                    <li><strong>Benefits:</strong> Health insurance, 401k matching, PTO</li>
+                                    <li><strong>Perks:</strong> Free meals, gym memberships, learning budgets</li>
+                                </ul>
+
+                                <h4>Career Development Factors:</h4>
+                                <ul>
+                                    <li><strong>Learning Opportunities:</strong> Will you grow technically and professionally?</li>
+                                    <li><strong>Mentorship:</strong> Access to senior developers and guidance</li>
+                                    <li><strong>Project Variety:</strong> Exposure to different technologies and challenges</li>
+                                    <li><strong>Career Progression:</strong> Clear path for advancement</li>
+                                    <li><strong>Skill Building:</strong> Technologies and skills you'll develop</li>
+                                </ul>
+
+                                <h4>Work-Life Balance Considerations:</h4>
+                                <ul>
+                                    <li><strong>Work Hours:</strong> Expected hours per week and on-call responsibilities</li>
+                                    <li><strong>Flexibility:</strong> Remote work options, flexible schedules</li>
+                                    <li><strong>Vacation Policy:</strong> PTO days, sabbatical options</li>
+                                    <li><strong>Company Culture:</strong> Values, team dynamics, work environment</li>
+                                    <li><strong>Location:</strong> Commute, cost of living, lifestyle factors</li>
+                                </ul>
+
+                                <h4>The Offer Evaluation Framework:</h4>
+                                <ol>
+                                    <li><strong>Financial Analysis:</strong> Total compensation vs. cost of living</li>
+                                    <li><strong>Career Impact:</strong> How does this advance your long-term goals?</li>
+                                    <li><strong>Learning Potential:</strong> What will you learn in the first 2 years?</li>
+                                    <li><strong>Cultural Fit:</strong> Do you align with company values and team?</li>
+                                    <li><strong>Risk Assessment:</strong> Company stability, industry trends</li>
+                                </ol>
+
+                                <h4>Red Flags to Watch For:</h4>
+                                <ul>
+                                    <li>Pressure to accept immediately without time to consider</li>
+                                    <li>Vague job descriptions or responsibilities</li>
+                                    <li>No clear career progression path</li>
+                                    <li>High turnover rates or negative employee reviews</li>
+                                    <li>Compensation significantly below market rate</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Salary Negotiation for New Graduates</h3>
+                            <div class="talking-points">
+                                <p><strong>Yes, You Can (and Should) Negotiate</strong></p>
+                                
+                                <h4>Negotiation Myths Debunked:</h4>
+                                <ul>
+                                    <li><strong>Myth:</strong> "New grads can't negotiate"</li>
+                                    <li><strong>Reality:</strong> Most companies expect some negotiation</li>
+                                    <li><strong>Myth:</strong> "They'll rescind the offer if I negotiate"</li>
+                                    <li><strong>Reality:</strong> Professional negotiation rarely leads to rescinded offers</li>
+                                    <li><strong>Myth:</strong> "I should be grateful for any offer"</li>
+                                    <li><strong>Reality:</strong> You should advocate for fair compensation</li>
+                                </ul>
+
+                                <h4>Research and Preparation:</h4>
+                                <ul>
+                                    <li><strong>Market Research:</strong> Use Glassdoor, levels.fyi, PayScale for salary data</li>
+                                    <li><strong>Geographic Adjustment:</strong> Account for cost of living differences</li>
+                                    <li><strong>Company Size Factor:</strong> Startups vs. big tech vs. traditional companies</li>
+                                    <li><strong>Your Value Proposition:</strong> Unique skills, projects, experiences</li>
+                                    <li><strong>Alternative Offers:</strong> Leverage competing offers (carefully)</li>
+                                </ul>
+
+                                <h4>What to Negotiate (In Order of Likelihood):</h4>
+                                <ol>
+                                    <li><strong>Start Date:</strong> Often the easiest to negotiate</li>
+                                    <li><strong>Signing Bonus:</strong> One-time payment to offset relocation or other costs</li>
+                                    <li><strong>Base Salary:</strong> Annual compensation (harder but possible)</li>
+                                    <li><strong>Vacation Time:</strong> Additional PTO days</li>
+                                    <li><strong>Professional Development:</strong> Conference budget, training allowance</li>
+                                    <li><strong>Equipment:</strong> Better laptop, monitor, home office setup</li>
+                                    <li><strong>Equity:</strong> More stock options (mainly for startups)</li>
+                                </ol>
+
+                                <h4>Negotiation Scripts and Approaches:</h4>
+                                
+                                <p><strong>Opening the Negotiation:</strong></p>
+                                <p>"Thank you for the offer! I'm very excited about the opportunity to join [Company] and contribute to [specific project/team]. I've done some research on market rates for similar positions, and I was hoping we could discuss the compensation package."</p>
+
+                                <p><strong>Making Your Case:</strong></p>
+                                <p>"Based on my research and the unique value I bring through [specific skills/projects], I was hoping we could consider a base salary of $X, which would be more in line with market rates for someone with my background."</p>
+
+                                <p><strong>If They Say No:</strong></p>
+                                <p>"I understand the salary may be fixed. Are there other aspects of the package we could discuss, such as the signing bonus, start date, or professional development budget?"</p>
+
+                                <h4>Negotiation Best Practices:</h4>
+                                <ul>
+                                    <li><strong>Be Professional:</strong> Maintain a collaborative, not adversarial tone</li>
+                                    <li><strong>Be Specific:</strong> Use concrete numbers and data</li>
+                                    <li><strong>Be Reasonable:</strong> Don't ask for 50% more than the offer</li>
+                                    <li><strong>Be Grateful:</strong> Express appreciation for the opportunity</li>
+                                    <li><strong>Be Patient:</strong> Give them time to consider and respond</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Handling Rejections Professionally and Productively</h3>
+                            <div class="talking-points">
+                                <p><strong>Turning Setbacks into Comebacks</strong></p>
+                                
+                                <h4>The Immediate Response Strategy:</h4>
+                                <ul>
+                                    <li><strong>Take Time to Process:</strong> Allow yourself to feel disappointed</li>
+                                    <li><strong>Respond Professionally:</strong> Thank them for their time and consideration</li>
+                                    <li><strong>Ask for Feedback:</strong> Request specific areas for improvement</li>
+                                    <li><strong>Keep the Door Open:</strong> Express interest in future opportunities</li>
+                                    <li><strong>Maintain Relationships:</strong> Connect with interviewers on LinkedIn</li>
+                                </ul>
+
+                                <h4>Professional Rejection Response Template:</h4>
+                                <p>"Thank you for letting me know about your decision. While I'm disappointed, I really enjoyed learning about [Company] and meeting the team. I'd appreciate any feedback you could share about areas where I could improve for future opportunities. I hope we can stay connected, and I'd love to be considered for future roles that might be a better fit."</p>
+
+                                <h4>Learning from Rejection:</h4>
+                                <ul>
+                                    <li><strong>Analyze the Process:</strong> What went well? What could improve?</li>
+                                    <li><strong>Identify Patterns:</strong> Are you getting rejected at the same stage?</li>
+                                    <li><strong>Skill Gaps:</strong> What technical or soft skills need development?</li>
+                                    <li><strong>Interview Performance:</strong> Communication, preparation, confidence</li>
+                                    <li><strong>Application Strategy:</strong> Are you targeting the right roles?</li>
+                                </ul>
+
+                                <h4>Common Rejection Reasons and Solutions:</h4>
+                                <ul>
+                                    <li><strong>"Not enough experience":</strong> Focus on projects, internships, contributions</li>
+                                    <li><strong>"Technical skills gap":</strong> Identify and learn specific technologies</li>
+                                    <li><strong>"Cultural fit concerns":</strong> Research company culture better</li>
+                                    <li><strong>"Communication issues":</strong> Practice explaining technical concepts</li>
+                                    <li><strong>"Went with internal candidate":</strong> Nothing you could control</li>
+                                </ul>
+
+                                <h4>Bouncing Back Strategies:</h4>
+                                <ul>
+                                    <li><strong>Reframe the Experience:</strong> Practice for the next opportunity</li>
+                                    <li><strong>Expand Your Search:</strong> Apply to more companies and roles</li>
+                                    <li><strong>Skill Development:</strong> Address identified weaknesses</li>
+                                    <li><strong>Network Activation:</strong> Leverage connections for referrals</li>
+                                    <li><strong>Stay Positive:</strong> Maintain confidence and momentum</li>
+                                </ul>
+
+                                <h4>When to Follow Up After Rejection:</h4>
+                                <ul>
+                                    <li><strong>3-6 months later:</strong> Check in about new opportunities</li>
+                                    <li><strong>After skill development:</strong> Share relevant new projects or certifications</li>
+                                    <li><strong>Company growth:</strong> When they're hiring heavily in your area</li>
+                                    <li><strong>Referral opportunity:</strong> When you have a strong internal advocate</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Multiple Offers: The Good Problem to Have</h3>
+                            <div class="talking-points">
+                                <p><strong>Managing Competing Offers Strategically</strong></p>
+                                
+                                <h4>Timeline Management:</h4>
+                                <ul>
+                                    <li><strong>Understand Deadlines:</strong> When do you need to respond to each offer?</li>
+                                    <li><strong>Request Extensions:</strong> Most companies will give you a few extra days</li>
+                                    <li><strong>Accelerate Other Processes:</strong> Ask pending companies to expedite</li>
+                                    <li><strong>Be Transparent:</strong> Let companies know you have other offers</li>
+                                    <li><strong>Don't Overextend:</strong> Don't ask for unreasonable amounts of time</li>
+                                </ul>
+
+                                <h4>Leveraging Offers Ethically:</h4>
+                                <ul>
+                                    <li><strong>Share Competing Offers:</strong> "I have another offer with X compensation"</li>
+                                    <li><strong>Ask for Matching:</strong> "Would you be able to match this package?"</li>
+                                    <li><strong>Highlight Preferences:</strong> "Your company is my top choice, but..."</li>
+                                    <li><strong>Be Honest:</strong> Don't fabricate offers or numbers</li>
+                                    <li><strong>Stay Professional:</strong> Don't create bidding wars</li>
+                                </ul>
+
+                                <h4>Decision-Making Framework:</h4>
+                                <ol>
+                                    <li><strong>Create a Comparison Matrix:</strong> List all factors and score each offer</li>
+                                    <li><strong>Weight Your Priorities:</strong> What matters most to you right now?</li>
+                                    <li><strong>Consider Long-term Impact:</strong> Where do you want to be in 3-5 years?</li>
+                                    <li><strong>Trust Your Gut:</strong> Which opportunity excites you most?</li>
+                                    <li><strong>Seek Advice:</strong> Talk to mentors, family, trusted friends</li>
+                                </ol>
+
+                                <h4>Declining Offers Gracefully:</h4>
+                                <p><strong>Template:</strong></p>
+                                <p>"Thank you so much for the generous offer and for the time you invested in getting to know me. After careful consideration, I've decided to accept another opportunity that aligns more closely with my current career goals. I was impressed by [specific positive aspects] and hope we can stay connected for future opportunities."</p>
+
+                                <h4>Common Multiple Offer Scenarios:</h4>
+                                <ul>
+                                    <li><strong>High pay vs. better learning:</strong> Consider long-term career impact</li>
+                                    <li><strong>Startup vs. big company:</strong> Risk tolerance and career stage</li>
+                                    <li><strong>Dream company vs. practical choice:</strong> Sometimes practical wins</li>
+                                    <li><strong>Local vs. relocation:</strong> Lifestyle and personal factors</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Making the Final Decision</h3>
+                            <div class="talking-points">
+                                <p><strong>Choosing Your First Professional Adventure</strong></p>
+                                
+                                <h4>The Decision Matrix Approach:</h4>
+                                <table style="border-collapse: collapse; width: 100%; margin: 20px 0;">
+                                    <tr style="background-color: #f5f5f5;">
+                                        <th style="border: 1px solid #ddd; padding: 8px;">Factor</th>
+                                        <th style="border: 1px solid #ddd; padding: 8px;">Weight (1-5)</th>
+                                        <th style="border: 1px solid #ddd; padding: 8px;">Company A</th>
+                                        <th style="border: 1px solid #ddd; padding: 8px;">Company B</th>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">Total Compensation</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">4</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">8</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">6</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">Learning Opportunities</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">5</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">7</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">9</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">Company Culture</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">4</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">6</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">8</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">Work-Life Balance</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">3</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">9</td>
+                                        <td style="border: 1px solid #ddd; padding: 8px;">7</td>
+                                    </tr>
+                                </table>
+
+                                <h4>Questions to Ask Yourself:</h4>
+                                <ul>
+                                    <li><strong>Career Goals:</strong> Which opportunity best advances my 5-year plan?</li>
+                                    <li><strong>Learning Priority:</strong> Where will I grow the most professionally?</li>
+                                    <li><strong>Risk Tolerance:</strong> Am I comfortable with startup uncertainty?</li>
+                                    <li><strong>Personal Life:</strong> How will this affect my relationships and lifestyle?</li>
+                                    <li><strong>Financial Needs:</strong> Do I need to prioritize immediate compensation?</li>
+                                </ul>
+
+                                <h4>The 10-10-10 Rule:</h4>
+                                <ul>
+                                    <li><strong>10 minutes:</strong> How will I feel about this decision in 10 minutes?</li>
+                                    <li><strong>10 months:</strong> How will I feel about this decision in 10 months?</li>
+                                    <li><strong>10 years:</strong> How will I feel about this decision in 10 years?</li>
+                                </ul>
+
+                                <h4>Final Decision Factors:</h4>
+                                <ul>
+                                    <li><strong>Gut Feeling:</strong> Which opportunity genuinely excites you?</li>
+                                    <li><strong>Growth Potential:</strong> Where can you make the biggest impact?</li>
+                                    <li><strong>Alignment:</strong> Which matches your values and goals?</li>
+                                    <li><strong>Opportunity Cost:</strong> What are you giving up with each choice?</li>
+                                    <li><strong>Reversibility:</strong> How easy would it be to change course later?</li>
+                                </ul>
+
+                                <h4>Remember: There's No Perfect Choice</h4>
+                                <ul>
+                                    <li>Every opportunity has trade-offs</li>
+                                    <li>Your first job isn't your last job</li>
+                                    <li>You can course-correct as you learn and grow</li>
+                                    <li>The "wrong" choice can still lead to great outcomes</li>
+                                    <li>Your attitude and effort matter more than the perfect opportunity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Comprehensive 2-Week Offer Management Simulation</h3>
+                            <div class="talking-points">
+                                <p><strong>Your Complete Offer Evaluation and Negotiation Bootcamp</strong></p>
+                                
+                                <h4>Week 1: Research and Preparation</h4>
+                                <p><strong>Days 1-3: Market Research and Compensation Analysis</strong></p>
+                                <ul>
+                                    <li>Research salary ranges for entry-level positions in your target roles across 5 different markets</li>
+                                    <li>Create comprehensive compensation comparison spreadsheets including base salary, benefits, and total package</li>
+                                    <li>Analyze cost of living differences between target cities and calculate real purchasing power</li>
+                                    <li>Research equity compensation at different company stages (startup vs. public company)</li>
+                                    <li>Interview 3 recent graduates about their offer evaluation and negotiation experiences</li>
+                                </ul>
+
+                                <p><strong>Days 4-5: Offer Evaluation Framework Development</strong></p>
+                                <ul>
+                                    <li>Create a comprehensive offer evaluation matrix with weighted criteria</li>
+                                    <li>Develop decision-making frameworks for different scenarios (single offer, multiple offers, etc.)</li>
+                                    <li>Research and document red flags to watch for in job offers</li>
+                                    <li>Create templates for professional communication during offer processes</li>
+                                </ul>
+
+                                <p><strong>Days 6-7: Negotiation Strategy and Practice</strong></p>
+                                <ul>
+                                    <li>Develop negotiation strategies for different types of companies and roles</li>
+                                    <li>Practice negotiation conversations with friends, family, or mentors</li>
+                                    <li>Create scripts for various negotiation scenarios and responses</li>
+                                    <li>Research company-specific negotiation norms and practices</li>
+                                </ul>
+
+                                <h4>Week 2: Simulation and Application</h4>
+                                <p><strong>Days 8-10: Offer Simulation Exercise</strong></p>
+                                <ul>
+                                    <li>Create 3 realistic job offer scenarios based on your research</li>
+                                    <li>Apply your evaluation framework to each simulated offer</li>
+                                    <li>Practice negotiation conversations for each scenario</li>
+                                    <li>Document your decision-making process and rationale</li>
+                                    <li>Get feedback from mentors or career counselors on your approach</li>
+                                </ul>
+
+                                <p><strong>Days 11-12: Rejection Response and Recovery Planning</strong></p>
+                                <ul>
+                                    <li>Develop professional templates for responding to rejections</li>
+                                    <li>Create a systematic approach for learning from rejection feedback</li>
+                                    <li>Build a rejection recovery plan including skill development and application strategy</li>
+                                    <li>Practice turning rejection conversations into future opportunities</li>
+                                </ul>
+
+                                <p><strong>Days 13-14: Long-term Career Strategy Integration</strong></p>
+                                <ul>
+                                    <li>Connect offer evaluation criteria to your long-term career goals</li>
+                                    <li>Develop a framework for evaluating future career moves</li>
+                                    <li>Create a professional network maintenance plan for ongoing relationships</li>
+                                    <li>Build a system for tracking and following up on professional opportunities</li>
+                                </ul>
+
+                                <h4>Required Deliverables:</h4>
+                                <ol>
+                                    <li><strong>Market Research Report:</strong> Comprehensive salary and compensation analysis</li>
+                                    <li><strong>Offer Evaluation Matrix:</strong> Weighted framework for comparing opportunities</li>
+                                    <li><strong>Negotiation Strategy Guide:</strong> Scripts and approaches for different scenarios</li>
+                                    <li><strong>Simulated Offer Analysis:</strong> Detailed evaluation of 3 realistic job offers</li>
+                                    <li><strong>Professional Communication Templates:</strong> Scripts for offers, negotiations, and rejections</li>
+                                    <li><strong>Rejection Response Plan:</strong> Strategy for handling and learning from rejections</li>
+                                    <li><strong>Career Decision Framework:</strong> Long-term approach to career choices</li>
+                                    <li><strong>Network Maintenance System:</strong> Plan for ongoing professional relationships</li>
+                                </ol>
+
+                                <h4>Success Metrics:</h4>
+                                <ul>
+                                    <li><strong>Research Depth:</strong> Comprehensive understanding of market compensation</li>
+                                    <li><strong>Framework Quality:</strong> Practical, weighted evaluation criteria</li>
+                                    <li><strong>Negotiation Readiness:</strong> Confident, professional negotiation approach</li>
+                                    <li><strong>Decision Clarity:</strong> Clear process for making career decisions</li>
+                                    <li><strong>Professional Communication:</strong> Polished templates and scripts</li>
+                                </ul>
+
+                                <h4>Advanced Challenges:</h4>
+                                <ul>
+                                    <li>Negotiate a real offer (if you have one) using your developed strategies</li>
+                                    <li>Help a peer evaluate and negotiate their job offer</li>
+                                    <li>Create a comprehensive guide for other students on offer evaluation</li>
+                                    <li>Build relationships with recruiters and hiring managers for future opportunities</li>
+                                    <li>Develop expertise in a specific aspect of compensation (equity, benefits, etc.)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Homework Submission Reminder</h3>
+                            <div class="talking-points">
+                                <p><strong>Submit Your Offer Management Mastery Portfolio!</strong></p>
+                                <p>After completing your 2-week offer management simulation, submit your comprehensive homework through the <strong>Homework</strong> tab. This assignment will prepare you for the most critical moments of your job search!</p>
+                                
+                                <p><strong>Submission Deadline:</strong> Two weeks from today's meeting</p>
+                                <p><strong>This assignment could literally be worth thousands of dollars in your first job - invest the time!</strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>

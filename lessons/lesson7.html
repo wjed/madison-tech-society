@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 7: Behavioral Interviewing - Madison Tech Society</title>
+    <title>Lesson 7: Mastering Technical Interviews - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo"><h2>MTS</h2></div>
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../photos/mtslogo.png" alt="Madison Tech Society" class="logo-img">
+                </a>
+            </div>
             <ul class="nav-menu">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../about.html" class="nav-link">About</a></li>
-                <li><a href="../members.html" class="nav-link">Members</a></li>
-                <li><a href="../lessons.html" class="nav-link active">Lessons</a></li>
-                <li><a href="../events.html" class="nav-link">Events</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Membership</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../leadership.html">Leadership</a></li>
+                        <li><a href="../members.html">Members</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active">Education</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../lessons.html">Lessons</a></li>
+                        <li><a href="../events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="../homework.html" class="nav-link">Homework</a></li>
                 <li><a href="../join.html" class="nav-link">Join Us</a></li>
                 <li><a href="../contact.html" class="nav-link">Contact</a></li>
             </ul>
@@ -27,7 +43,7 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Behavioral Interviewing: Telling Your Story with Confidence</h1>
+                <h1>Mastering Technical Interviews</h1>
                 <p>Lesson 7 - Spring Semester</p>
             </div>
         </section>
@@ -42,18 +58,448 @@
                 <div class="lesson-main">
                     <div class="lesson-overview">
                         <h2>Lesson Overview</h2>
-                        <p>Master the art of behavioral interviewing using the STAR method. Learn to craft compelling stories that showcase your skills, experience, and potential to employers.</p>
+                        <p>Conquer technical interviews with confidence through systematic preparation, problem-solving frameworks, and hands-on practice. Learn to tackle coding challenges, system design questions, and behavioral interviews like a pro.</p>
                         
                         <div class="lesson-tags">
-                            <span class="lesson-tag">Interview Skills</span>
-                            <span class="lesson-tag">Storytelling</span>
+                            <span class="lesson-tag">Technical Interviews</span>
+                            <span class="lesson-tag">Problem Solving</span>
                         </div>
                     </div>
 
-                    <div class="lesson-status">
-                        <div class="status-banner">
-                            <h3>🚧 Content In Development</h3>
-                            <p>This lesson page is currently being developed. Check back soon for complete materials and resources!</p>
+                    <div class="discussion-topics">
+                        <h2>Discussion Topics & Talking Points</h2>
+                        
+                        <div class="topic-section">
+                            <h3>Opening: The Technical Interview Reality</h3>
+                            <div class="talking-points">
+                                <p><strong>Question:</strong> "What's your biggest fear about technical interviews?"</p>
+                                <ul>
+                                    <li>Blanking out on algorithms you know</li>
+                                    <li>Not knowing the "right" answer immediately</li>
+                                    <li>Coding under pressure with someone watching</li>
+                                    <li>System design questions seeming impossible</li>
+                                    <li>Imposter syndrome hitting hard</li>
+                                </ul>
+                                <p><strong>Reality Check:</strong> Technical interviews test problem-solving process, not just final answers!</p>
+                                
+                                <h4>What Interviewers Actually Look For:</h4>
+                                <ul>
+                                    <li><strong>Problem-solving approach:</strong> How you break down complex problems</li>
+                                    <li><strong>Communication skills:</strong> Can you explain your thinking clearly?</li>
+                                    <li><strong>Code quality:</strong> Clean, readable, maintainable code</li>
+                                    <li><strong>Debugging ability:</strong> How you handle errors and edge cases</li>
+                                    <li><strong>Collaboration:</strong> How you work with hints and feedback</li>
+                                    <li><strong>Growth mindset:</strong> How you handle challenges and learn</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>The Anatomy of Technical Interview Types</h3>
+                            <div class="talking-points">
+                                <p><strong>Know What You're Walking Into</strong></p>
+                                
+                                <h4>1. Coding Challenges (Most Common)</h4>
+                                <ul>
+                                    <li><strong>Format:</strong> 45-60 minutes, whiteboard or shared editor</li>
+                                    <li><strong>Topics:</strong> Data structures, algorithms, problem-solving</li>
+                                    <li><strong>Examples:</strong> Array manipulation, tree traversal, dynamic programming</li>
+                                    <li><strong>Goal:</strong> Working solution with good time/space complexity</li>
+                                </ul>
+
+                                <h4>2. System Design Interviews</h4>
+                                <ul>
+                                    <li><strong>Format:</strong> 45-60 minutes, whiteboard or drawing tool</li>
+                                    <li><strong>Topics:</strong> Architecture, scalability, trade-offs</li>
+                                    <li><strong>Examples:</strong> Design Twitter, URL shortener, chat system</li>
+                                    <li><strong>Goal:</strong> Demonstrate understanding of large-scale systems</li>
+                                </ul>
+
+                                <h4>3. Behavioral Interviews</h4>
+                                <ul>
+                                    <li><strong>Format:</strong> 30-45 minutes, conversational</li>
+                                    <li><strong>Topics:</strong> Past experiences, teamwork, leadership</li>
+                                    <li><strong>Examples:</strong> "Tell me about a challenging project"</li>
+                                    <li><strong>Goal:</strong> Assess cultural fit and soft skills</li>
+                                </ul>
+
+                                <h4>4. Take-Home Assignments</h4>
+                                <ul>
+                                    <li><strong>Format:</strong> 2-8 hours, your own environment</li>
+                                    <li><strong>Topics:</strong> Full application or specific feature</li>
+                                    <li><strong>Examples:</strong> Build a REST API, create a React component</li>
+                                    <li><strong>Goal:</strong> See your real-world coding abilities</li>
+                                </ul>
+
+                                <h4>5. Pair Programming Sessions</h4>
+                                <ul>
+                                    <li><strong>Format:</strong> 60-90 minutes, collaborative coding</li>
+                                    <li><strong>Topics:</strong> Working on actual company codebase</li>
+                                    <li><strong>Examples:</strong> Fix a bug, add a feature, refactor code</li>
+                                    <li><strong>Goal:</strong> See how you collaborate and communicate</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>The UMPIRE Method for Coding Problems</h3>
+                            <div class="talking-points">
+                                <p><strong>Your Step-by-Step Problem-Solving Framework</strong></p>
+                                
+                                <h4>U - Understand the Problem</h4>
+                                <ul>
+                                    <li>Read the problem statement carefully</li>
+                                    <li>Ask clarifying questions about inputs, outputs, constraints</li>
+                                    <li>Work through 2-3 examples manually</li>
+                                    <li>Identify edge cases and special scenarios</li>
+                                    <li><strong>Example questions:</strong> "What if the array is empty?" "Are there duplicate values?"</li>
+                                </ul>
+
+                                <h4>M - Match to Known Patterns</h4>
+                                <ul>
+                                    <li>Does this remind you of problems you've solved before?</li>
+                                    <li>What data structures might be useful?</li>
+                                    <li>Is this a searching, sorting, or graph problem?</li>
+                                    <li>Could you use two pointers, sliding window, or divide and conquer?</li>
+                                </ul>
+
+                                <h4>P - Plan Your Approach</h4>
+                                <ul>
+                                    <li>Outline your solution in plain English</li>
+                                    <li>Break down into smaller steps</li>
+                                    <li>Consider multiple approaches and their trade-offs</li>
+                                    <li>Get interviewer buy-in before coding</li>
+                                </ul>
+
+                                <h4>I - Implement Your Solution</h4>
+                                <ul>
+                                    <li>Write clean, readable code</li>
+                                    <li>Use meaningful variable names</li>
+                                    <li>Think out loud as you code</li>
+                                    <li>Handle edge cases as you go</li>
+                                </ul>
+
+                                <h4>R - Review Your Code</h4>
+                                <ul>
+                                    <li>Walk through your solution with an example</li>
+                                    <li>Check for bugs, typos, and logic errors</li>
+                                    <li>Verify edge cases are handled</li>
+                                    <li>Discuss time and space complexity</li>
+                                </ul>
+
+                                <h4>E - Evaluate and Optimize</h4>
+                                <ul>
+                                    <li>Can you improve the time or space complexity?</li>
+                                    <li>Are there alternative approaches?</li>
+                                    <li>What would you do differently with more time?</li>
+                                    <li>How would this scale with larger inputs?</li>
+                                </ul>
+                            </div>
+                        </div>   
+                     <div class="topic-section">
+                            <h3>Essential Data Structures and Algorithms</h3>
+                            <div class="talking-points">
+                                <p><strong>Your Technical Interview Toolkit</strong></p>
+                                
+                                <h4>Must-Know Data Structures:</h4>
+                                <ul>
+                                    <li><strong>Arrays/Lists:</strong> Indexing, iteration, two-pointer techniques</li>
+                                    <li><strong>Strings:</strong> Manipulation, parsing, pattern matching</li>
+                                    <li><strong>Hash Tables/Maps:</strong> O(1) lookups, counting, caching</li>
+                                    <li><strong>Stacks:</strong> LIFO operations, expression evaluation, backtracking</li>
+                                    <li><strong>Queues:</strong> FIFO operations, BFS, level-order traversal</li>
+                                    <li><strong>Linked Lists:</strong> Node manipulation, cycle detection, reversal</li>
+                                    <li><strong>Trees:</strong> Binary trees, BSTs, traversals, tree properties</li>
+                                    <li><strong>Graphs:</strong> Adjacency lists/matrices, DFS, BFS, shortest paths</li>
+                                </ul>
+
+                                <h4>Core Algorithms to Master:</h4>
+                                <ul>
+                                    <li><strong>Sorting:</strong> Quick sort, merge sort, heap sort</li>
+                                    <li><strong>Searching:</strong> Binary search and its variations</li>
+                                    <li><strong>Tree Traversals:</strong> Inorder, preorder, postorder, level-order</li>
+                                    <li><strong>Graph Algorithms:</strong> DFS, BFS, Dijkstra's, topological sort</li>
+                                    <li><strong>Dynamic Programming:</strong> Memoization, tabulation, common patterns</li>
+                                    <li><strong>Greedy Algorithms:</strong> Activity selection, interval scheduling</li>
+                                    <li><strong>Divide and Conquer:</strong> Merge sort, quick sort, binary search</li>
+                                </ul>
+
+                                <h4>Common Problem Patterns:</h4>
+                                <ul>
+                                    <li><strong>Two Pointers:</strong> Array problems, palindromes, pair finding</li>
+                                    <li><strong>Sliding Window:</strong> Substring problems, array subarrays</li>
+                                    <li><strong>Fast & Slow Pointers:</strong> Cycle detection, middle element</li>
+                                    <li><strong>Merge Intervals:</strong> Overlapping intervals, scheduling</li>
+                                    <li><strong>Cyclic Sort:</strong> Missing numbers, duplicate finding</li>
+                                    <li><strong>Tree DFS:</strong> Path problems, tree manipulation</li>
+                                    <li><strong>Tree BFS:</strong> Level-order problems, minimum depth</li>
+                                    <li><strong>Backtracking:</strong> Permutations, combinations, N-Queens</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>System Design Interview Mastery</h3>
+                            <div class="talking-points">
+                                <p><strong>Thinking Like a Senior Engineer</strong></p>
+                                
+                                <h4>The System Design Process:</h4>
+                                <ol>
+                                    <li><strong>Clarify Requirements (5-10 minutes)</strong>
+                                        <ul>
+                                            <li>Functional requirements: What should the system do?</li>
+                                            <li>Non-functional requirements: Scale, performance, availability</li>
+                                            <li>Constraints: Budget, timeline, existing systems</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Estimate Scale (5 minutes)</strong>
+                                        <ul>
+                                            <li>How many users? Daily active users?</li>
+                                            <li>Read vs. write ratio</li>
+                                            <li>Data storage requirements</li>
+                                            <li>Bandwidth and QPS estimates</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>High-Level Design (10-15 minutes)</strong>
+                                        <ul>
+                                            <li>Draw major components and their interactions</li>
+                                            <li>API design for key operations</li>
+                                            <li>Database schema design</li>
+                                            <li>Basic data flow</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Detailed Design (15-20 minutes)</strong>
+                                        <ul>
+                                            <li>Deep dive into critical components</li>
+                                            <li>Algorithm choices and trade-offs</li>
+                                            <li>Data structures and storage decisions</li>
+                                            <li>Caching strategies</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Scale and Optimize (5-10 minutes)</strong>
+                                        <ul>
+                                            <li>Identify bottlenecks</li>
+                                            <li>Scaling strategies (horizontal vs. vertical)</li>
+                                            <li>Load balancing and sharding</li>
+                                            <li>Monitoring and alerting</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+
+                                <h4>Key System Design Concepts:</h4>
+                                <ul>
+                                    <li><strong>Scalability:</strong> Horizontal vs. vertical scaling</li>
+                                    <li><strong>Reliability:</strong> Fault tolerance, redundancy, backup</li>
+                                    <li><strong>Availability:</strong> Uptime, disaster recovery, failover</li>
+                                    <li><strong>Consistency:</strong> ACID properties, eventual consistency</li>
+                                    <li><strong>Partition Tolerance:</strong> CAP theorem, network failures</li>
+                                    <li><strong>Performance:</strong> Latency, throughput, response time</li>
+                                </ul>
+
+                                <h4>Common System Design Questions:</h4>
+                                <ul>
+                                    <li>Design a URL shortener (like bit.ly)</li>
+                                    <li>Design a social media feed (like Twitter)</li>
+                                    <li>Design a chat system (like WhatsApp)</li>
+                                    <li>Design a video streaming service (like YouTube)</li>
+                                    <li>Design a ride-sharing service (like Uber)</li>
+                                    <li>Design a search engine (like Google)</li>
+                                    <li>Design a recommendation system (like Netflix)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Behavioral Interview Excellence</h3>
+                            <div class="talking-points">
+                                <p><strong>The STAR Method for Compelling Stories</strong></p>
+                                
+                                <h4>STAR Framework:</h4>
+                                <ul>
+                                    <li><strong>Situation:</strong> Set the context and background</li>
+                                    <li><strong>Task:</strong> Describe your responsibility or challenge</li>
+                                    <li><strong>Action:</strong> Explain what you did specifically</li>
+                                    <li><strong>Result:</strong> Share the outcome and what you learned</li>
+                                </ul>
+
+                                <h4>Common Behavioral Questions:</h4>
+                                <ul>
+                                    <li>"Tell me about a time you faced a significant challenge"</li>
+                                    <li>"Describe a situation where you had to work with a difficult team member"</li>
+                                    <li>"Give me an example of when you showed leadership"</li>
+                                    <li>"Tell me about a time you failed and what you learned"</li>
+                                    <li>"Describe a project you're particularly proud of"</li>
+                                    <li>"How do you handle tight deadlines and pressure?"</li>
+                                    <li>"Tell me about a time you had to learn something new quickly"</li>
+                                    <li>"Describe a situation where you disagreed with your manager"</li>
+                                </ul>
+
+                                <h4>Story Bank Categories:</h4>
+                                <ul>
+                                    <li><strong>Leadership:</strong> Times you took charge or influenced others</li>
+                                    <li><strong>Problem-Solving:</strong> Complex challenges you overcame</li>
+                                    <li><strong>Teamwork:</strong> Successful collaboration experiences</li>
+                                    <li><strong>Conflict Resolution:</strong> Disagreements you handled well</li>
+                                    <li><strong>Learning:</strong> New skills or technologies you mastered</li>
+                                    <li><strong>Failure:</strong> Mistakes you made and lessons learned</li>
+                                    <li><strong>Innovation:</strong> Creative solutions you developed</li>
+                                    <li><strong>Impact:</strong> Results you delivered or improvements you made</li>
+                                </ul>
+
+                                <h4>Crafting Compelling Stories:</h4>
+                                <ul>
+                                    <li>Choose stories that highlight different skills</li>
+                                    <li>Include specific metrics and outcomes when possible</li>
+                                    <li>Show growth and learning from experiences</li>
+                                    <li>Keep stories concise (2-3 minutes max)</li>
+                                    <li>Practice until they feel natural</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Interview Day Strategy and Mindset</h3>
+                            <div class="talking-points">
+                                <p><strong>Performing Under Pressure</strong></p>
+                                
+                                <h4>Pre-Interview Preparation:</h4>
+                                <ul>
+                                    <li><strong>Technical Review:</strong> Practice 2-3 problems the night before</li>
+                                    <li><strong>Company Research:</strong> Recent news, products, culture, values</li>
+                                    <li><strong>Question Preparation:</strong> Have 3-5 thoughtful questions ready</li>
+                                    <li><strong>Materials Ready:</strong> Resume copies, portfolio, notebook</li>
+                                    <li><strong>Logistics Confirmed:</strong> Location, time, interviewer names</li>
+                                </ul>
+
+                                <h4>During the Interview:</h4>
+                                <ul>
+                                    <li><strong>Think Out Loud:</strong> Verbalize your thought process</li>
+                                    <li><strong>Ask Questions:</strong> Clarify requirements and constraints</li>
+                                    <li><strong>Stay Calm:</strong> Take deep breaths, it's okay to pause</li>
+                                    <li><strong>Be Collaborative:</strong> Work with the interviewer, not against them</li>
+                                    <li><strong>Show Enthusiasm:</strong> Genuine interest in the role and company</li>
+                                </ul>
+
+                                <h4>When You're Stuck:</h4>
+                                <ul>
+                                    <li><strong>Don't Panic:</strong> It's normal to get stuck sometimes</li>
+                                    <li><strong>Think Aloud:</strong> Share what you're considering</li>
+                                    <li><strong>Ask for Hints:</strong> "Could you give me a hint about the approach?"</li>
+                                    <li><strong>Start Simple:</strong> Brute force solution first, then optimize</li>
+                                    <li><strong>Use Examples:</strong> Work through small examples to find patterns</li>
+                                </ul>
+
+                                <h4>Handling Rejection:</h4>
+                                <ul>
+                                    <li><strong>Ask for Feedback:</strong> What could you improve?</li>
+                                    <li><strong>Learn and Iterate:</strong> Use feedback to get better</li>
+                                    <li><strong>Stay Positive:</strong> Each interview is practice for the next</li>
+                                    <li><strong>Keep Applying:</strong> Don't let one rejection stop you</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Comprehensive 2-Week Interview Mastery Challenge</h3>
+                            <div class="talking-points">
+                                <p><strong>Your Complete Interview Preparation Bootcamp</strong></p>
+                                
+                                <h4>Week 1: Foundation Building and Problem Solving</h4>
+                                <p><strong>Days 1-3: Algorithm and Data Structure Review</strong></p>
+                                <ul>
+                                    <li>Complete comprehensive review of all essential data structures</li>
+                                    <li>Solve 15 easy-level problems covering arrays, strings, and hash tables</li>
+                                    <li>Master 10 medium-level problems focusing on trees and graphs</li>
+                                    <li>Create personal cheat sheets for each data structure with time/space complexities</li>
+                                    <li>Practice explaining solutions out loud using the UMPIRE method</li>
+                                </ul>
+
+                                <p><strong>Days 4-5: Problem Pattern Recognition</strong></p>
+                                <ul>
+                                    <li>Solve 20 problems across different patterns (two pointers, sliding window, etc.)</li>
+                                    <li>Create a pattern recognition guide with example problems for each</li>
+                                    <li>Practice identifying patterns within 2-3 minutes of reading problems</li>
+                                    <li>Time yourself solving problems to build speed and confidence</li>
+                                </ul>
+
+                                <p><strong>Days 6-7: System Design Fundamentals</strong></p>
+                                <ul>
+                                    <li>Study 5 classic system design problems in detail</li>
+                                    <li>Practice drawing system architectures and explaining trade-offs</li>
+                                    <li>Learn to estimate scale and capacity for different systems</li>
+                                    <li>Create templates for common system design components</li>
+                                    <li>Practice 30-minute system design sessions with timer</li>
+                                </ul>
+
+                                <h4>Week 2: Advanced Practice and Mock Interviews</h4>
+                                <p><strong>Days 8-10: Intensive Coding Practice</strong></p>
+                                <ul>
+                                    <li>Solve 25 medium to hard-level problems under timed conditions</li>
+                                    <li>Practice coding on whiteboard or shared screen environment</li>
+                                    <li>Focus on clean code, edge cases, and optimization</li>
+                                    <li>Record yourself solving problems to review communication style</li>
+                                    <li>Practice with different programming languages if applicable</li>
+                                </ul>
+
+                                <p><strong>Days 11-12: Behavioral Interview Mastery</strong></p>
+                                <ul>
+                                    <li>Develop 8-10 STAR stories covering different competencies</li>
+                                    <li>Practice delivering stories naturally and concisely</li>
+                                    <li>Prepare thoughtful questions for different types of interviewers</li>
+                                    <li>Research target companies thoroughly and prepare company-specific talking points</li>
+                                    <li>Practice common behavioral questions with friends or family</li>
+                                </ul>
+
+                                <p><strong>Days 13-14: Mock Interview Marathon</strong></p>
+                                <ul>
+                                    <li>Conduct 5 full mock interviews with peers, mentors, or online platforms</li>
+                                    <li>Include technical coding, system design, and behavioral components</li>
+                                    <li>Get detailed feedback on communication, problem-solving, and presentation</li>
+                                    <li>Practice with different interview formats (phone, video, whiteboard)</li>
+                                    <li>Refine your approach based on feedback and performance</li>
+                                </ul>
+
+                                <h4>Required Deliverables:</h4>
+                                <ol>
+                                    <li><strong>Problem-Solving Portfolio:</strong> 60+ solved problems with detailed explanations</li>
+                                    <li><strong>Data Structure Cheat Sheets:</strong> Comprehensive reference guides</li>
+                                    <li><strong>System Design Case Studies:</strong> 5 detailed system design solutions</li>
+                                    <li><strong>STAR Story Bank:</strong> 10 polished behavioral interview stories</li>
+                                    <li><strong>Mock Interview Reports:</strong> Feedback and improvement plans from 5 mock interviews</li>
+                                    <li><strong>Company Research Profiles:</strong> Detailed analysis of 5 target companies</li>
+                                    <li><strong>Interview Strategy Guide:</strong> Personal playbook for different interview types</li>
+                                    <li><strong>Performance Analytics:</strong> Tracking of problem-solving speed and accuracy</li>
+                                </ol>
+
+                                <h4>Success Metrics:</h4>
+                                <ul>
+                                    <li><strong>Problem Solving:</strong> 90%+ accuracy on medium-level problems</li>
+                                    <li><strong>Speed:</strong> Solve easy problems in under 15 minutes</li>
+                                    <li><strong>Communication:</strong> Clear explanation of approach within 2 minutes</li>
+                                    <li><strong>System Design:</strong> Complete high-level design in 15 minutes</li>
+                                    <li><strong>Behavioral:</strong> Deliver STAR stories in under 3 minutes each</li>
+                                </ul>
+
+                                <h4>Advanced Challenges:</h4>
+                                <ul>
+                                    <li>Solve a hard-level problem in under 45 minutes</li>
+                                    <li>Design a system for 1 billion users with detailed scaling strategy</li>
+                                    <li>Conduct a mock interview where you're the interviewer</li>
+                                    <li>Optimize a solution to achieve better time/space complexity</li>
+                                    <li>Handle a curveball question with grace and creativity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="topic-section">
+                            <h3>Homework Submission Reminder</h3>
+                            <div class="talking-points">
+                                <p><strong>Submit Your Interview Mastery Portfolio!</strong></p>
+                                <p>After completing your 2-week interview preparation bootcamp, submit your comprehensive homework through the <strong>Homework</strong> tab. This intensive assignment will transform your interview performance!</p>
+                                
+                                <p><strong>Submission Deadline:</strong> Two weeks from today's meeting</p>
+                                <p><strong>This is your most important assignment - it directly impacts your job prospects!</strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
