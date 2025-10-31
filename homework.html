@@ -44,7 +44,33 @@
         </div>
     </nav>
 
-    <main>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <div class="password-content">
+                <div class="password-header">
+                    <img src="photos/mtslogo.png" alt="Madison Tech Society" class="password-logo">
+                    <h2>Member Access Required</h2>
+                    <p>Please enter the password provided in today's meeting to access homework submissions.</p>
+                </div>
+                
+                <div class="password-form">
+                    <input type="password" id="password-input" placeholder="Enter password" class="password-field">
+                    <button onclick="checkPassword()" class="password-btn">Access Homework</button>
+                    <div id="password-error" class="password-error" style="display: none;">
+                        Incorrect password. Please try again or contact leadership if you attended today's meeting.
+                    </div>
+                </div>
+                
+                <div class="password-footer">
+                    <p><strong>Note:</strong> The password is provided during each meeting. You must attend to receive homework assignments.</p>
+                    <p>Having trouble? <a href="contact.html">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="homework-main" style="display: none;">
         <section class="page-header">
             <div class="container">
                 <h1>Homework Submissions</h1>
@@ -54,8 +80,6 @@
 
         <section class="homework-content">
             <div class="container">
-
-
                 <div class="submission-form-section">
                     <h2>Submit Your Homework</h2>
                     <div class="google-form-container">
@@ -84,8 +108,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
     </main>
@@ -97,5 +119,90 @@
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script>
+        // Password protection functionality
+        const correctPassword = "MTS-Spring2026";
+        
+        function checkPassword() {
+            const inputPassword = document.getElementById('password-input').value;
+            const errorDiv = document.getElementById('password-error');
+            
+            if (inputPassword === correctPassword) {
+                // Correct password - show content
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('homework-main').style.display = 'block';
+                
+                // Store access in session storage so they don't need to re-enter during session
+                sessionStorage.setItem('homeworkAccess', 'granted');
+                
+                // Show success message
+                showAccessMessage('Access granted! Welcome to the homework submission portal.');
+            } else {
+                // Incorrect password - show error
+                errorDiv.style.display = 'block';
+                document.getElementById('password-input').value = '';
+                document.getElementById('password-input').focus();
+                
+                // Hide error after 3 seconds
+                setTimeout(() => {
+                    errorDiv.style.display = 'none';
+                }, 3000);
+            }
+        }
+        
+        // Check if user already has access in this session
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('homeworkAccess') === 'granted') {
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('homework-main').style.display = 'block';
+            }
+            
+            // Allow Enter key to submit password
+            document.getElementById('password-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    checkPassword();
+                }
+            });
+        });
+        
+        function showAccessMessage(message) {
+            const notification = document.createElement('div');
+            notification.className = 'access-notification';
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <span class="notification-icon">🔓</span>
+                    <span class="notification-message">${message}</span>
+                    <button class="notification-close">&times;</button>
+                </div>
+            `;
+            
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #10b981;
+                color: white;
+                padding: 1rem;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 10001;
+                max-width: 400px;
+                animation: slideIn 0.3s ease-out;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.remove();
+                }
+            }, 4000);
+            
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.addEventListener('click', () => {
+                notification.remove();
+            });
+        }
+    </script>
 </body>
 </html>
