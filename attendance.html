@@ -45,7 +45,33 @@
         </div>
     </nav>
 
-    <main>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <div class="password-content">
+                <div class="password-header">
+                    <img src="photos/mtslogo.png" alt="Madison Tech Society" class="password-logo">
+                    <h2>Member Access Required</h2>
+                    <p>Please enter the password provided in today's meeting to access attendance records.</p>
+                </div>
+                
+                <div class="password-form">
+                    <input type="password" id="password-input" placeholder="Enter password" class="password-field">
+                    <button onclick="checkPassword()" class="password-btn">Access Attendance</button>
+                    <div id="password-error" class="password-error" style="display: none;">
+                        Incorrect password. Please try again or contact leadership if you attended today's meeting.
+                    </div>
+                </div>
+                
+                <div class="password-footer">
+                    <p><strong>Note:</strong> The password is provided during each meeting. You must attend to access attendance records.</p>
+                    <p>Having trouble? <a href="contact.html">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="attendance-main" style="display: none;">
         <section class="page-header">
             <div class="container">
                 <h1>Meeting Attendance</h1>
@@ -55,52 +81,10 @@
 
         <section class="attendance-content">
             <div class="container">
-                <div class="attendance-intro">
-                    <h2>Attendance Tracking</h2>
-                    <p>Stay up to date with your meeting attendance and participation in MTS events. Regular attendance helps you get the most out of our professional development opportunities.</p>
-                    
-                    <div class="attendance-benefits">
-                        <div class="benefit-item">
-                            <span class="benefit-icon">📊</span>
-                            <span>Track Progress</span>
-                        </div>
-                        <div class="benefit-item">
-                            <span class="benefit-icon">🎯</span>
-                            <span>Stay Engaged</span>
-                        </div>
-                        <div class="benefit-item">
-                            <span class="benefit-icon">🏆</span>
-                            <span>Recognition</span>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="attendance-sheet-section">
                     <h2>Attendance Records</h2>
                     <div class="google-sheet-container">
                         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVJeCaI7XLjiAesJDio7UffcQn9-y-BjCRzvh_Knd627u5Nfslox93iNZz_CVxdqEAC2PUq0ny_QC7/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading attendance data...</iframe>
-                    </div>
-                </div>
-
-                <div class="attendance-info">
-                    <h2>Attendance Guidelines</h2>
-                    <div class="guidelines-grid">
-                        <div class="guideline-item">
-                            <h4>Regular Meetings</h4>
-                            <p>Attend weekly meetings to stay current with lessons and networking opportunities.</p>
-                        </div>
-                        <div class="guideline-item">
-                            <h4>Special Events</h4>
-                            <p>Participate in workshops, guest speaker sessions, and career development events.</p>
-                        </div>
-                        <div class="guideline-item">
-                            <h4>Make-Up Sessions</h4>
-                            <p>Contact leadership if you miss a meeting to discuss make-up opportunities.</p>
-                        </div>
-                        <div class="guideline-item">
-                            <h4>Recognition</h4>
-                            <p>Consistent attendance is recognized and can lead to leadership opportunities.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -143,11 +127,63 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Madison Tech Society. All rights reserved.</p>
+                <p>&copy; 2025 Madison Tech Society. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="scripts/main.js"></script>
+    <script>
+        // Password protection functionality
+        const correctPassword = "MTS-Spring2026";
+        
+        function checkPassword() {
+            const inputPassword = document.getElementById('password-input').value;
+            const errorDiv = document.getElementById('password-error');
+            
+            if (inputPassword === correctPassword) {
+                // Correct password - show content
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('attendance-main').style.display = 'block';
+                
+                // Store access in session storage
+                sessionStorage.setItem('attendanceAccess', 'granted');
+                
+                // Show success message (optional)
+                showAccessMessage('Access granted! Welcome to the attendance records.');
+            } else {
+                // Incorrect password - show error
+                errorDiv.style.display = 'block';
+                document.getElementById('password-input').value = '';
+                document.getElementById('password-input').focus();
+                
+                // Hide error after 3 seconds
+                setTimeout(() => {
+                    errorDiv.style.display = 'none';
+                }, 3000);
+            }
+        }
+        
+        // Check if user already has access when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('attendanceAccess') === 'granted') {
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('attendance-main').style.display = 'block';
+            }
+            
+            // Allow Enter key to submit password
+            document.getElementById('password-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    checkPassword();
+                }
+            });
+        });
+        
+        // Optional: Show access message
+        function showAccessMessage(message) {
+            // You can implement a toast notification here if desired
+            console.log(message);
+        }
+    </script>
 </body>
 </html>

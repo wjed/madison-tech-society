@@ -3298,4 +3298,41 @@ eadership Application Page */
     .guidelines-grid .guideline-item {
         padding: 1.5rem;
     }
+}/* Clean 
+Attendance Page Styles */
+.attendance-content {
+    padding: 4rem 0;
+}
+
+.attendance-sheet-section {
+    margin: 2rem 0;
+}
+
+.attendance-sheet-section h2 {
+    text-align: center;
+    color: #009698;
+    margin-bottom: 2rem;
+}
+
+.google-sheet-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #8EE4D7;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.google-sheet-container iframe {
+    width: 100%;
+    min-height: 600px;
+    border: none;
+}
+
+/* Responsive Design for Clean Attendance Page */
+@media (max-width: 768px) {
+    .google-sheet-container {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
 }
