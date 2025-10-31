@@ -1130,15 +1130,18 @@ section h3 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 1rem;
 }
 
 .lesson-tag {
     background: #009698;
     color: white;
-    padding: 0.25rem 0.75rem;
+    padding: 0.5rem 1rem;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .lesson-description {
