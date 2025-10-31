@@ -2697,8 +2697,9 @@ mprehensive Mobile Responsiveness */
         max-width: none;
         padding: 0;
     }
-}/
-* Touch device specific styles */
+}
+
+/* Touch device specific styles */
 .touch-device .btn:active,
 .touch-device .nav-link:active,
 .touch-device .social-link-modern:active {
