@@ -267,7 +267,7 @@ section h3 {
 
 .focus-list {
     list-style: none;
-    margin: 2rem 0;
+    margin: 0.5rem 0 2rem 0;
 }
 
 .focus-list li {
@@ -1138,6 +1138,7 @@ section h3 {
     flex: 1;
     margin: 0;
     line-height: 1.3;
+    min-width: 0; /* Allow text to shrink */
 }
 
 .lesson-tag {

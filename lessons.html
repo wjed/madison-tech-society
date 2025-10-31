@@ -44,7 +44,33 @@
         </div>
     </nav>
 
-    <main>
+    <!-- Password Protection Overlay -->
+    <div id="password-overlay" class="password-overlay">
+        <div class="password-container">
+            <div class="password-content">
+                <div class="password-header">
+                    <img src="photos/mtslogo.png" alt="Madison Tech Society" class="password-logo">
+                    <h2>Member Access Required</h2>
+                    <p>Please enter the password provided in today's meeting to access lesson materials.</p>
+                </div>
+                
+                <div class="password-form">
+                    <input type="password" id="password-input" placeholder="Enter password" class="password-field">
+                    <button onclick="checkPassword()" class="password-btn">Access Lessons</button>
+                    <div id="password-error" class="password-error" style="display: none;">
+                        Incorrect password. Please try again or contact leadership if you attended today's meeting.
+                    </div>
+                </div>
+                
+                <div class="password-footer">
+                    <p><strong>Note:</strong> The password is provided during each meeting. You must attend to receive lesson access.</p>
+                    <p>Having trouble? <a href="contact.html">Contact us</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="lessons-main" style="display: none;">
         <section class="page-header">
             <div class="container">
                 <h1>Lessons and Resources</h1>
@@ -149,7 +175,7 @@
                     <a href="lessons/lesson5.html" class="lesson-card" data-topic="networking">
                         <div class="lesson-header">
                             <h3>Networking 101: How to Build Relationships in Tech</h3>
-                            <span class="lesson-tag">Professional Networking</span>
+                            <span class="lesson-tag">Networking</span>
                         </div>
                         <p class="lesson-description">Reaching out to alumni, recruiters, engineers. What to say in cold messages, how to build long-term connections, career fair and LinkedIn message templates.</p>
                         <div class="lesson-meta">
@@ -301,5 +327,57 @@
 
     <script src="scripts/main.js"></script>
     <script src="scripts/lessons.js"></script>
+    <script>
+        // Password protection functionality
+        const correctPassword = "MTS-Spring2026";
+        
+        function checkPassword() {
+            const inputPassword = document.getElementById('password-input').value;
+            const errorDiv = document.getElementById('password-error');
+            
+            if (inputPassword === correctPassword) {
+                // Correct password - show content
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('lessons-main').style.display = 'block';
+                
+                // Store access in session storage
+                sessionStorage.setItem('lessonsAccess', 'granted');
+                
+                // Show success message (optional)
+                showAccessMessage('Access granted! Welcome to the lesson materials.');
+            } else {
+                // Incorrect password - show error
+                errorDiv.style.display = 'block';
+                document.getElementById('password-input').value = '';
+                document.getElementById('password-input').focus();
+                
+                // Hide error after 3 seconds
+                setTimeout(() => {
+                    errorDiv.style.display = 'none';
+                }, 3000);
+            }
+        }
+        
+        // Check if user already has access when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (sessionStorage.getItem('lessonsAccess') === 'granted') {
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('lessons-main').style.display = 'block';
+            }
+            
+            // Allow Enter key to submit password
+            document.getElementById('password-input').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    checkPassword();
+                }
+            });
+        });
+        
+        // Optional: Show access message
+        function showAccessMessage(message) {
+            // You can implement a toast notification here if desired
+            console.log(message);
+        }
+    </script>
 </body>
 </html>
