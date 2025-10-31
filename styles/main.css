@@ -2948,4 +2948,88 @@ mprehensive Mobile Responsiveness */
         padding: 0.875rem;
         font-size: 0.9rem;
     }
+}/*
+ Assignment Guide Styles */
+.assignment-guide {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+}
+
+.guide-section {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #009698;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.guide-section:last-child {
+    margin-bottom: 0;
+}
+
+.guide-section h4 {
+    color: #009698;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.guide-example {
+    margin-top: 1rem;
+}
+
+.guide-example p {
+    margin-bottom: 0.75rem;
+}
+
+.guide-example ul {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.guide-example li {
+    margin-bottom: 0.25rem;
+    line-height: 1.5;
+}
+
+.example-text {
+    background: #e8f4f8;
+    border: 1px solid #8EE4D7;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+.example-text p {
+    margin-bottom: 0.5rem;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.example-text em {
+    font-style: normal;
+    color: #1a202c;
+}
+
+/* Mobile responsiveness for assignment guide */
+@media (max-width: 768px) {
+    .assignment-guide {
+        padding: 1rem;
+    }
+    
+    .guide-section {
+        padding: 1rem;
+    }
+    
+    .guide-section h4 {
+        font-size: 1.1rem;
+    }
+    
+    .example-text {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
 }
