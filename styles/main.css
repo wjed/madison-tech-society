@@ -3045,3 +3045,257 @@ mprehensive Mobile Responsiveness */
         font-size: 0.9rem;
     }
 }
+/* L
+eadership Application Page */
+.application-content {
+    padding: 4rem 0;
+}
+
+.application-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.application-intro h2 {
+    color: #009698;
+    margin-bottom: 1rem;
+}
+
+.application-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.benefit-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8fafc;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid #8EE4D7;
+    font-weight: 500;
+    color: #009698;
+}
+
+.benefit-highlight .benefit-icon {
+    font-size: 1.2rem;
+}
+
+.application-form-section {
+    margin: 4rem 0;
+}
+
+.application-form-section h2 {
+    text-align: center;
+    color: #009698;
+    margin-bottom: 2rem;
+}
+
+.google-form-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #8EE4D7;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.google-form-container iframe {
+    width: 100%;
+    min-height: 2348px;
+    border: none;
+}
+
+.application-info {
+    margin-top: 4rem;
+}
+
+.application-info h2 {
+    text-align: center;
+    color: #009698;
+    margin-bottom: 2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #8EE4D7;
+    text-align: center;
+}
+
+.info-item h4 {
+    color: #009698;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.info-item p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Application Page */
+@media (max-width: 768px) {
+    .application-benefits {
+        gap: 1rem;
+    }
+    
+    .benefit-highlight {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .google-form-container {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .info-item {
+        padding: 1.5rem;
+    }
+}/*
+ Attendance Page */
+.attendance-content {
+    padding: 4rem 0;
+}
+
+.attendance-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.attendance-intro h2 {
+    color: #009698;
+    margin-bottom: 1rem;
+}
+
+.attendance-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.attendance-benefits .benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8fafc;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    border: 2px solid #8EE4D7;
+    font-weight: 500;
+    color: #009698;
+}
+
+.attendance-benefits .benefit-icon {
+    font-size: 1.2rem;
+}
+
+.attendance-sheet-section {
+    margin: 4rem 0;
+}
+
+.attendance-sheet-section h2 {
+    text-align: center;
+    color: #009698;
+    margin-bottom: 2rem;
+}
+
+.google-sheet-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #8EE4D7;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.google-sheet-container iframe {
+    width: 100%;
+    min-height: 600px;
+    border: none;
+}
+
+.attendance-info {
+    margin-top: 4rem;
+}
+
+.attendance-info h2 {
+    text-align: center;
+    color: #009698;
+    margin-bottom: 2rem;
+}
+
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.guidelines-grid .guideline-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #8EE4D7;
+    text-align: center;
+}
+
+.guidelines-grid .guideline-item h4 {
+    color: #009698;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.guidelines-grid .guideline-item p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Responsive Design for Attendance Page */
+@media (max-width: 768px) {
+    .attendance-benefits {
+        gap: 1rem;
+    }
+    
+    .attendance-benefits .benefit-item {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .google-sheet-container {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+    
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .guidelines-grid .guideline-item {
+        padding: 1.5rem;
+    }
+}
