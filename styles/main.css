@@ -3432,4 +3432,38 @@ Attendance Page Styles */
         height: 40px;
         margin: 0 20px;
     }
+}/
+* Leadership Company Logo Overlays */
+.leader-photo {
+    position: relative;
+}
+
+.company-logo-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: white;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid #009698;
+}
+
+.leader-company-logo {
+    height: 30px;
+    width: auto;
+    display: block;
+}
+
+/* Responsive adjustments for company logos */
+@media (max-width: 768px) {
+    .company-logo-overlay {
+        bottom: 8px;
+        right: 8px;
+        padding: 6px;
+    }
+    
+    .leader-company-logo {
+        height: 24px;
+    }
 }
