@@ -3494,4 +3494,24 @@ dership Company Logo Overlays */
     .leader-company-logo {
         height: 20px;
     }
+}/* Leadersh
+ip Company Logos */
+.company-logo-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.leader-company-logo {
+    height: 30px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments for company logos */
+@media (max-width: 768px) {
+    .leader-company-logo {
+        height: 25px;
+    }
 }
