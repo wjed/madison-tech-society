@@ -29,7 +29,7 @@ body {
 /* Navigation */
 .navbar {
     background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
@@ -230,14 +230,14 @@ section h3 {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .highlight-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-color: #009698;
 }
 
@@ -340,7 +340,7 @@ section h3 {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
     border: 1px solid #8EE4D7;
 }
@@ -551,7 +551,7 @@ section h3 {
 .leader-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     overflow: hidden;
     display: flex;
@@ -611,7 +611,7 @@ section h3 {
     margin-bottom: 2rem;
 }
 
-.leadership-mission > p {
+.leadership-mission>p {
     font-size: 1.1rem;
     color: #333333;
     max-width: 800px;
@@ -665,7 +665,7 @@ section h3 {
 
 .member-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .member-initial {
@@ -750,7 +750,7 @@ section h3 {
 
 .social-link-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border-color: #009698;
 }
 
@@ -797,7 +797,7 @@ section h3 {
     left: 0;
     background: white;
     min-width: 160px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 0.5rem 0;
     opacity: 0;
@@ -1062,7 +1062,7 @@ section h3 {
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid #8EE4D7;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .google-form-container iframe {
@@ -1075,7 +1075,7 @@ section h3 {
     .google-form-container {
         padding: 1rem;
     }
-    
+
     .google-form-container iframe {
         height: 1200px;
     }
@@ -1112,7 +1112,7 @@ section h3 {
 .lesson-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -1138,7 +1138,8 @@ section h3 {
     flex: 1;
     margin: 0;
     line-height: 1.3;
-    min-width: 0; /* Allow text to shrink */
+    min-width: 0;
+    /* Allow text to shrink */
 }
 
 .lesson-tag {
@@ -1201,7 +1202,7 @@ section h3 {
 .event-card {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #e2e8f0;
     padding: 2rem;
     display: flex;
@@ -1298,7 +1299,7 @@ section h3 {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     text-align: center;
     border: 1px solid #e2e8f0;
 }
@@ -1337,7 +1338,7 @@ section h3 {
     background: white;
     padding: 3rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #e2e8f0;
 }
 
@@ -1491,7 +1492,7 @@ section h3 {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #e2e8f0;
 }
 
@@ -1563,7 +1564,7 @@ section h3 {
     .dropdown-toggle::after {
         display: none;
     }
-    
+
     .hamburger {
         display: flex;
         z-index: 1001;
@@ -1580,73 +1581,73 @@ section h3 {
     .hamburger.active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-    
+
     .hero h1 {
         font-size: 2.5rem;
     }
-    
+
     .page-header h1 {
         font-size: 2rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .about-grid,
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .event-card {
         flex-direction: column;
         gap: 1rem;
     }
-    
+
     .event-date {
         align-self: flex-start;
     }
-    
+
     .calendar-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .newsletter-form input {
         min-width: 250px;
     }
-    
+
     .filter-controls {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .leader-card {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
-    
+
     .leader-photo img {
         width: 100px;
         height: 100px;
     }
-    
+
     .members-list {
         grid-template-columns: 1fr;
     }
-    
+
     .membership-stats {
         grid-template-columns: 1fr;
     }
-    
+
     .dropdown-menu {
         position: static;
         opacity: 1;
@@ -1656,15 +1657,15 @@ section h3 {
         background: #F4EFE1;
         margin-top: 0.5rem;
     }
-    
+
     .dropdown-toggle::after {
         display: none;
     }
-    
+
     .guidelines-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .assignment-item {
         flex-direction: column;
         align-items: flex-start;
@@ -1702,7 +1703,8 @@ section h3 {
     color: #450084;
 }
 
-.talking-points ul, .talking-points ol {
+.talking-points ul,
+.talking-points ol {
     margin: 1rem 0;
     padding-left: 1.5rem;
 }
@@ -1741,7 +1743,7 @@ section h3 {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1813,20 +1815,22 @@ section h3 {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .position-card {
         padding: 1.5rem;
     }
-    
+
     .apply-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .apply-buttons .btn {
         width: 200px;
     }
-}/* Contact
+}
+
+/* Contact
  Page Redesign */
 .contact-content {
     padding: 4rem 0;
@@ -1872,7 +1876,7 @@ section h3 {
     background: white;
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -1947,7 +1951,8 @@ section h3 {
     border-bottom-color: currentColor;
 }
 
-.location-details, .schedule-details {
+.location-details,
+.schedule-details {
     text-align: left;
     background: #f8f9fa;
     padding: 1rem;
@@ -1989,7 +1994,7 @@ section h3 {
 }
 
 .social-link-modern.instagram {
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: white;
 }
 
@@ -2000,7 +2005,7 @@ section h3 {
 
 .social-link-modern:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Leadership Recruitment Redesign */
@@ -2086,7 +2091,7 @@ section h3 {
     background: white;
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #e0e0e0;
     transition: all 0.3s ease;
     position: relative;
@@ -2219,45 +2224,46 @@ section h3 {
     .contact-hero-content h2 {
         font-size: 2rem;
     }
-    
+
     .recruitment-header h2 {
         font-size: 2rem;
     }
-    
+
     .recruitment-benefits {
         gap: 1rem;
     }
-    
+
     .benefit-item {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     .positions-showcase {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .position-header {
         flex-direction: column;
         text-align: center;
         gap: 0.5rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .cta-buttons .btn {
         width: 250px;
     }
-    
+
     .social-links-modern {
         flex-direction: column;
         align-items: center;
     }
 }
+
 /* Co
 mprehensive Mobile Responsiveness */
 
@@ -2635,6 +2641,7 @@ mprehensive Mobile Responsiveness */
 
 /* Touch device improvements */
 @media (hover: none) and (pointer: coarse) {
+
     /* Increase touch targets */
     .btn,
     .nav-link,
@@ -2651,7 +2658,7 @@ mprehensive Mobile Responsiveness */
     .position-card:hover,
     .position-card-modern:hover {
         transform: none;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     }
 
     /* Improve dropdown behavior on touch */
@@ -2663,7 +2670,8 @@ mprehensive Mobile Responsiveness */
 }
 
 /* High DPI displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .logo-img {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: crisp-edges;
@@ -2688,6 +2696,7 @@ mprehensive Mobile Responsiveness */
 
 /* Print styles */
 @media print {
+
     .navbar,
     .hamburger,
     .btn,
@@ -2730,25 +2739,25 @@ mprehensive Mobile Responsiveness */
     .container {
         padding: 0 10px;
     }
-    
+
     .hero h1 {
         font-size: 1.8rem;
     }
-    
+
     .page-header h1 {
         font-size: 1.6rem;
     }
-    
+
     .btn {
         padding: 8px 16px;
         font-size: 0.85rem;
     }
-    
+
     .contact-hero,
     .recruitment-hero {
         padding: 2rem 1rem;
     }
-    
+
     .leader-card,
     .contact-card,
     .position-card-modern {
@@ -2758,6 +2767,7 @@ mprehensive Mobile Responsiveness */
 
 /* Accessibility improvements for mobile */
 @media (max-width: 768px) {
+
     /* Ensure focus states are visible */
     .btn:focus,
     .nav-link:focus,
@@ -2766,17 +2776,18 @@ mprehensive Mobile Responsiveness */
         outline: 2px solid #009698;
         outline-offset: 2px;
     }
-    
+
     /* Improve readability */
     body {
-        font-size: 16px; /* Prevents zoom on iOS */
+        font-size: 16px;
+        /* Prevents zoom on iOS */
     }
-    
+
     /* Better spacing for touch */
     .nav-menu li {
         margin: 0.5rem 0;
     }
-    
+
     .nav-link {
         padding: 1rem;
         min-height: 44px;
@@ -2784,7 +2795,9 @@ mprehensive Mobile Responsiveness */
         align-items: center;
         justify-content: center;
     }
-}/* Password
+}
+
+/* Password
  Protection Styles */
 .password-overlay {
     position: fixed;
@@ -2920,6 +2933,7 @@ mprehensive Mobile Responsiveness */
         transform: translateX(100%);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -2932,15 +2946,15 @@ mprehensive Mobile Responsiveness */
         margin: 1rem;
         width: calc(100% - 2rem);
     }
-    
+
     .password-content {
         padding: 2rem 1.5rem;
     }
-    
+
     .password-header h2 {
         font-size: 1.5rem;
     }
-    
+
     .password-logo {
         height: 50px;
     }
@@ -2950,17 +2964,19 @@ mprehensive Mobile Responsiveness */
     .password-content {
         padding: 1.5rem 1rem;
     }
-    
+
     .password-header h2 {
         font-size: 1.3rem;
     }
-    
+
     .password-field,
     .password-btn {
         padding: 0.875rem;
         font-size: 0.9rem;
     }
-}/*
+}
+
+/*
  Assignment Guide Styles */
 .assignment-guide {
     background: #f8f9fa;
@@ -2975,7 +2991,7 @@ mprehensive Mobile Responsiveness */
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-left: 4px solid #009698;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .guide-section:last-child {
@@ -3031,20 +3047,21 @@ mprehensive Mobile Responsiveness */
     .assignment-guide {
         padding: 1rem;
     }
-    
+
     .guide-section {
         padding: 1rem;
     }
-    
+
     .guide-section h4 {
         font-size: 1.1rem;
     }
-    
+
     .example-text {
         padding: 0.75rem;
         font-size: 0.9rem;
     }
 }
+
 /* L
 eadership Application Page */
 .application-content {
@@ -3098,7 +3115,7 @@ eadership Application Page */
 .google-form-container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     overflow: hidden;
     margin: 0 auto;
@@ -3132,7 +3149,7 @@ eadership Application Page */
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     text-align: center;
 }
@@ -3153,26 +3170,28 @@ eadership Application Page */
     .application-benefits {
         gap: 1rem;
     }
-    
+
     .benefit-highlight {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     .google-form-container {
         margin: 0 -1rem;
         border-radius: 0;
     }
-    
+
     .info-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .info-item {
         padding: 1.5rem;
     }
-}/*
+}
+
+/*
  Attendance Page */
 .attendance-content {
     padding: 4rem 0;
@@ -3225,7 +3244,7 @@ eadership Application Page */
 .google-sheet-container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     overflow: hidden;
     margin: 0 auto;
@@ -3258,7 +3277,7 @@ eadership Application Page */
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     text-align: center;
 }
@@ -3279,26 +3298,28 @@ eadership Application Page */
     .attendance-benefits {
         gap: 1rem;
     }
-    
+
     .attendance-benefits .benefit-item {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
-    
+
     .google-sheet-container {
         margin: 0 -1rem;
         border-radius: 0;
     }
-    
+
     .guidelines-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .guidelines-grid .guideline-item {
         padding: 1.5rem;
     }
-}/* Clean 
+}
+
+/* Clean 
 Attendance Page Styles */
 .attendance-content {
     padding: 4rem 0;
@@ -3317,7 +3338,7 @@ Attendance Page Styles */
 .google-sheet-container {
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #8EE4D7;
     overflow: hidden;
     margin: 0 auto;
@@ -3336,8 +3357,8 @@ Attendance Page Styles */
         border-radius: 0;
     }
 }
-/
-* Member Placements Section */
+
+/* Member Placements Section */
 .member-placements {
     padding: 80px 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -3391,6 +3412,7 @@ Attendance Page Styles */
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -3401,12 +3423,12 @@ Attendance Page Styles */
     .member-placements h2 {
         font-size: 2rem;
     }
-    
+
     .placements-subtitle {
         font-size: 1rem;
         margin-bottom: 2rem;
     }
-    
+
     .company-logo {
         height: 40px;
         margin: 0 20px;
