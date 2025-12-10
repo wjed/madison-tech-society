@@ -3336,3 +3336,79 @@ Attendance Page Styles */
         border-radius: 0;
     }
 }
+/
+* Member Placements Section */
+.member-placements {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    text-align: center;
+}
+
+.member-placements h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.placements-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 -20px;
+}
+
+.logo-track {
+    display: inline-flex;
+    animation: scroll 30s linear infinite;
+    align-items: center;
+}
+
+.company-logo {
+    height: 60px;
+    width: auto;
+    margin: 0 40px;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.company-logo:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .member-placements h2 {
+        font-size: 2rem;
+    }
+    
+    .placements-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .company-logo {
+        height: 40px;
+        margin: 0 20px;
+    }
+}
