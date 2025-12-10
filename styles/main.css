@@ -3466,4 +3466,32 @@ Attendance Page Styles */
     .leader-company-logo {
         height: 24px;
     }
+}/* Lea
+dership Company Logo Overlays */
+.leader-photo {
+    position: relative;
+}
+
+.company-logo-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.leader-company-logo {
+    height: 25px;
+    width: auto;
+    display: block;
+}
+
+/* Responsive adjustments for company logos */
+@media (max-width: 768px) {
+    .company-logo-overlay {
+        bottom: 8px;
+        right: 8px;
+    }
+    
+    .leader-company-logo {
+        height: 20px;
+    }
 }
