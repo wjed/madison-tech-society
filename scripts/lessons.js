@@ -150,8 +150,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
-});// I
-nteractive reveal functionality for lessons
+});// Interactive reveal functionality for lessons
 function toggleReveal(elementId) {
     const element = document.getElementById(elementId);
     const button = element.previousElementSibling;
