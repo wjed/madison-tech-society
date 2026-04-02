@@ -6,6 +6,40 @@
     <title>Lesson 7: Mastering Technical Interviews - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/moon.css">
+    <style>
+        .slideshow-section { margin: 2.5rem 0; }
+        .slideshow-section > h2 { margin-bottom: 0.4rem; }
+        .slideshow-hint { color: #888; font-size: 0.875rem; margin-bottom: 0.75rem; font-style: italic; }
+        .reveal-container {
+            width: 100%; height: 480px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .reveal { height: 100%; }
+        .reveal .slides section { padding: 30px 50px; }
+        .reveal .slides section h2 { font-size: 1.6em; margin-bottom: 0.5em; }
+        .reveal .slides section h3 { font-size: 1.15em; margin-bottom: 0.4em; color: #aec6e8; }
+        .reveal .slides section ul { font-size: 0.82em; line-height: 1.7; }
+        .reveal .slides section p  { font-size: 0.82em; line-height: 1.6; }
+        .reveal .slides .stat-big { font-size: 2.8em; font-weight: 700; color: #58a6e0; }
+        .reveal .slides .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+        .reveal .slides .tag {
+            background: rgba(255,255,255,0.15); border-radius: 20px;
+            padding: 2px 12px; font-size: 0.75em;
+        }
+        .reveal .slides .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .reveal .slides .callout {
+            background: rgba(255,255,255,0.08); border-left: 4px solid #58a6e0;
+            padding: 0.6rem 1rem; border-radius: 0 8px 8px 0; margin: 0.5rem 0;
+            font-size: 0.82em;
+        }
+        .reveal .slides .green { color: #5cb85c; }
+        .reveal .slides .red { color: #e06060; }
+        .reveal .slides .yellow { color: #f0c040; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -64,6 +98,151 @@
                         <div class="lesson-tags">
                             <span class="lesson-tag">Technical Interviews</span>
                             <span class="lesson-tag">Problem Solving</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow-section">
+                        <h2>Lesson Slides</h2>
+                        <p class="slideshow-hint">Use arrow keys or click the arrows to navigate &bull; Press F for full screen</p>
+                        <div class="reveal-container">
+                            <div class="reveal" id="lesson-slideshow">
+                                <div class="slides">
+
+<section>
+    <h2>Technical Interviews — Demystified</h2>
+    <p style="color:#aec6e8">What they actually look like and how to not freak out</p>
+    <div class="tag-row">
+        <span class="tag">Lesson 7</span>
+        <span class="tag">March 10, 2027</span>
+        <span class="tag">Interview Skills</span>
+    </div>
+</section>
+
+<section>
+    <h2>What a Technical Interview Actually Looks Like</h2>
+    <p>Not what you think. Most entry-level tech interviews are:</p>
+    <ul>
+        <li class="fragment"><strong>45–60 minutes</strong> with an engineer or team lead</li>
+        <li class="fragment"><strong>1–2 coding problems</strong> (not necessarily hard LeetCode)</li>
+        <li class="fragment"><strong>Conversation, not examination</strong> — they want to see how you think</li>
+        <li class="fragment"><strong>Collaborative</strong> — they'll give hints. It's okay to ask for them.</li>
+    </ul>
+    <p class="fragment callout yellow">⚠️ The biggest lie about tech interviews: "It's all about grinding LeetCode Hard." For entry-level roles, communication and problem-solving process matter more than whether you solved it.</p>
+</section>
+
+<section>
+    <h2>The Interview Process Flow</h2>
+    <ol>
+        <li class="fragment"><strong>Resume Screen</strong> — ATS + recruiter review (pass/fail)</li>
+        <li class="fragment"><strong>Recruiter Phone Screen</strong> — 15–30 min, behavioral + background (pass/fail)</li>
+        <li class="fragment"><strong>Technical Phone Screen</strong> — 45–60 min, 1 coding problem or take-home</li>
+        <li class="fragment"><strong>Onsite / Virtual Final Round</strong> — 3–5 interviews: technical, system design (junior), behavioral</li>
+        <li class="fragment"><strong>Offer</strong> — Negotiate! Even interns can negotiate start date, location, stipends.</li>
+    </ol>
+    <p class="fragment callout">💡 Small companies often skip straight to a take-home project or single technical call. Know your target company's process.</p>
+</section>
+
+<section>
+    <h2>What They're Actually Testing</h2>
+    <div class="two-col">
+        <div>
+            <h3>Technical Signal</h3>
+            <ul>
+                <li>Can you break down a problem?</li>
+                <li>Do you know your data structures?</li>
+                <li>Can you write working code?</li>
+                <li>Do you test your solution?</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Communication Signal</h3>
+            <ul>
+                <li>Do you ask clarifying questions?</li>
+                <li>Can you explain your thinking?</li>
+                <li>Do you recover well from hints?</li>
+                <li>Are you pleasant to work with?</li>
+            </ul>
+        </div>
+    </div>
+    <p class="fragment callout yellow">💡 A candidate who solves the problem silently and gets it right often loses to a candidate who talks through their approach and gets it 80% right.</p>
+</section>
+
+<section>
+    <h2>Data Structures You MUST Know</h2>
+    <ul>
+        <li class="fragment"><strong>Arrays &amp; Strings</strong> — Two pointers, sliding window, basic manipulation</li>
+        <li class="fragment"><strong>Hash Maps / Sets</strong> — O(1) lookup, frequency counting, duplicate detection</li>
+        <li class="fragment"><strong>Linked Lists</strong> — Traversal, reversal, cycle detection</li>
+        <li class="fragment"><strong>Stacks &amp; Queues</strong> — Matching brackets, BFS, monotonic patterns</li>
+        <li class="fragment"><strong>Trees &amp; Graphs</strong> — DFS, BFS, binary search tree operations</li>
+        <li class="fragment"><strong>Sorting &amp; Binary Search</strong> — Know the complexities, when to use each</li>
+    </ul>
+    <p class="fragment callout green">✅ For internships, master Arrays, Hash Maps, and Trees. That covers ~70% of interview problems you'll see.</p>
+</section>
+
+<section>
+    <h2>The 4-Step Interview Framework</h2>
+    <ol>
+        <li class="fragment"><strong>Clarify</strong> — Ask questions before writing a line of code. "Can the input be empty? Are there duplicates? What's the expected output for edge cases?"</li>
+        <li class="fragment"><strong>Plan</strong> — Talk through your approach before coding. Mention brute force first, then optimize. State time/space complexity.</li>
+        <li class="fragment"><strong>Code</strong> — Write clean, readable code. Narrate what you're doing. It's okay to be slow.</li>
+        <li class="fragment"><strong>Review</strong> — Test with examples, including edge cases. Find your own bugs. Say "let me trace through this."</li>
+    </ol>
+    <p class="fragment callout">🎯 This framework works even if you don't know the answer. Interviewers hire candidates who have a strong process.</p>
+</section>
+
+<section>
+    <h2>Talking Through Your Code</h2>
+    <p>This is what separates good candidates from great ones:</p>
+    <ul>
+        <li class="fragment"><em>"I'm going to use a hash map here so I get O(1) lookup instead of O(n)..."</em></li>
+        <li class="fragment"><em>"The brute force would be O(n²) with nested loops. Can I do better? Let me think..."</em></li>
+        <li class="fragment"><em>"I'm initializing this pointer at the start of the array..."</em></li>
+        <li class="fragment"><em>"Wait, I think I have an off-by-one error here. Let me trace through..."</em></li>
+    </ul>
+    <p class="fragment callout green">✅ Think of it as pair programming. You're the driver, the interviewer is the navigator. Keep them in the loop at all times.</p>
+</section>
+
+<section>
+    <h2>LeetCode: How Much Is Enough?</h2>
+    <p>Realistic prep advice (not "grind 500 problems"):</p>
+    <ul>
+        <li class="fragment"><strong>Master Easy problems first</strong> — If you can't do these reliably, Hard problems are pointless</li>
+        <li class="fragment"><strong>50–75 well-understood Medium problems</strong> — By pattern, not memorization</li>
+        <li class="fragment"><strong>Learn the patterns:</strong> Two pointers, sliding window, BFS/DFS, dynamic programming basics</li>
+        <li class="fragment"><strong>Practice explaining out loud</strong> — Solving silently doesn't train interview skills</li>
+        <li class="fragment"><strong>Neetcode 150</strong> — The best curated list for internship-level prep</li>
+    </ul>
+    <p class="fragment callout yellow">⚠️ 2–3 months of consistent practice beats 2 weeks of panic grinding. Start now.</p>
+</section>
+
+<section>
+    <h2>Mock Interview Activity</h2>
+    <p class="callout yellow">Pair up. One person is the interviewer, one is the candidate.</p>
+    <p><strong>Problem:</strong> Given an array of integers, return the two numbers that add up to a target sum. Assume exactly one solution exists.</p>
+    <ul class="fragment">
+        <li>Candidate: Clarify, then explain approach before coding</li>
+        <li>Interviewer: Watch for: Does the candidate talk through their thinking? Do they test their solution?</li>
+        <li>After 10 minutes: Switch roles</li>
+    </ul>
+    <p class="fragment callout green">✅ This is the #1 most common "easy" LeetCode problem. Everyone should be able to solve it in multiple ways.</p>
+</section>
+
+<section>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li class="fragment">Technical interviews test thinking process as much as correctness</li>
+        <li class="fragment">Always clarify before coding — never start in silence</li>
+        <li class="fragment">Master the 4-step framework: Clarify → Plan → Code → Review</li>
+        <li class="fragment">For entry-level: focus on Arrays, Hash Maps, Trees, and Sorting</li>
+        <li class="fragment">Use Neetcode 150. Practice explaining out loud, not just solving silently</li>
+    </ul>
+    <p class="fragment callout green">🏠 <strong>Homework:</strong> Complete 5 LeetCode Easy problems using the 4-step framework. Write down your thought process for each.</p>
+</section>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -496,5 +675,15 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lessons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        new Reveal(document.querySelector('#lesson-slideshow'), {
+            embedded: true, hash: false,
+            controls: true, progress: true,
+            slideNumber: 'c/t', center: true,
+            transition: 'slide', margin: 0.04,
+            width: '100%', height: '100%'
+        }).initialize();
+    </script>
 </body>
 </html>

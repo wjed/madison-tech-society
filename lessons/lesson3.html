@@ -6,6 +6,40 @@
     <title>Lesson 3: LinkedIn + GitHub Online Presence - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/moon.css">
+    <style>
+        .slideshow-section { margin: 2.5rem 0; }
+        .slideshow-section > h2 { margin-bottom: 0.4rem; }
+        .slideshow-hint { color: #888; font-size: 0.875rem; margin-bottom: 0.75rem; font-style: italic; }
+        .reveal-container {
+            width: 100%; height: 480px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .reveal { height: 100%; }
+        .reveal .slides section { padding: 30px 50px; }
+        .reveal .slides section h2 { font-size: 1.6em; margin-bottom: 0.5em; }
+        .reveal .slides section h3 { font-size: 1.15em; margin-bottom: 0.4em; color: #aec6e8; }
+        .reveal .slides section ul { font-size: 0.82em; line-height: 1.7; }
+        .reveal .slides section p  { font-size: 0.82em; line-height: 1.6; }
+        .reveal .slides .stat-big { font-size: 2.8em; font-weight: 700; color: #58a6e0; }
+        .reveal .slides .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+        .reveal .slides .tag {
+            background: rgba(255,255,255,0.15); border-radius: 20px;
+            padding: 2px 12px; font-size: 0.75em;
+        }
+        .reveal .slides .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .reveal .slides .callout {
+            background: rgba(255,255,255,0.08); border-left: 4px solid #58a6e0;
+            padding: 0.6rem 1rem; border-radius: 0 8px 8px 0; margin: 0.5rem 0;
+            font-size: 0.82em;
+        }
+        .reveal .slides .green { color: #5cb85c; }
+        .reveal .slides .red { color: #e06060; }
+        .reveal .slides .yellow { color: #f0c040; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -68,6 +102,146 @@
                         <div class="lesson-tags">
                             <span class="lesson-tag">Professional Branding</span>
                             <span class="lesson-tag">Online Presence</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow-section">
+                        <h2>Lesson Slides</h2>
+                        <p class="slideshow-hint">Use arrow keys or click the arrows to navigate &bull; Press F for full screen</p>
+                        <div class="reveal-container">
+                            <div class="reveal" id="lesson-slideshow">
+                                <div class="slides">
+
+<section>
+    <h2>LinkedIn + GitHub</h2>
+    <p style="color:#aec6e8">Online Presence That Actually Works</p>
+    <div class="tag-row">
+        <span class="tag">Lesson 3</span>
+        <span class="tag">October 28, 2026</span>
+        <span class="tag">Professional Branding</span>
+    </div>
+</section>
+
+<section>
+    <h2>The Recruiter's First Move</h2>
+    <p class="stat-big">87%</p>
+    <p>of recruiters use LinkedIn to source and vet candidates.</p>
+    <p class="fragment callout">When a recruiter gets your resume, the first thing they do is Google your name and check LinkedIn. What do they find when they search <em>you</em>?</p>
+    <ul class="fragment">
+        <li class="red">❌ An empty or outdated LinkedIn profile</li>
+        <li class="red">❌ A GitHub with zero activity</li>
+        <li class="green">✅ A polished LinkedIn + active GitHub = instant credibility boost</li>
+    </ul>
+</section>
+
+<section>
+    <h2>LinkedIn: The 5 Critical Sections</h2>
+    <ol>
+        <li class="fragment"><strong>Headline</strong> — The first thing everyone reads. Don't just say "Student."</li>
+        <li class="fragment"><strong>Photo</strong> — Professional headshot. Big ROI. Profiles with photos get <strong>21×</strong> more views.</li>
+        <li class="fragment"><strong>About / Summary</strong> — 3–5 sentences. Who you are, what you do, what you want.</li>
+        <li class="fragment"><strong>Experience &amp; Projects</strong> — Same bullets as your resume. Keep them in sync.</li>
+        <li class="fragment"><strong>Skills</strong> — Get endorsed. LinkedIn's algorithm ranks profiles with 5+ skills much higher.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Writing a Killer Headline</h2>
+    <p class="callout red">❌ Bad: <em>"Computer Science Student at JMU"</em></p>
+    <p class="fragment callout green">✅ Good: <em>"CS Student @ JMU | Python, React, SQL | Seeking 2027 SWE Internship"</em></p>
+    <p class="fragment callout green">✅ Good: <em>"IT Student @ JMU | Cybersecurity &amp; Cloud Focus | CompTIA Security+ Candidate"</em></p>
+    <p class="fragment callout green">✅ Good: <em>"Future PM | ISAT Student @ JMU | Built apps used by 200+ students"</em></p>
+    <p class="fragment callout yellow">💡 Headline formula: <strong>[Role/identity] | [Key skills/focus] | [What you're seeking or what you've built]</strong></p>
+</section>
+
+<section>
+    <h2>LinkedIn About / Summary Formula</h2>
+    <p>3–5 sentences that tell your story:</p>
+    <ol>
+        <li class="fragment"><strong>Who you are:</strong> "I'm a junior CS student at JMU passionate about building products that solve real problems."</li>
+        <li class="fragment"><strong>What you've done:</strong> "I've built 3 full-stack web apps, contributed to open source, and interned at [Company]."</li>
+        <li class="fragment"><strong>What you're looking for:</strong> "Currently seeking summer 2027 internships in software engineering or product."</li>
+        <li class="fragment"><strong>How to reach you:</strong> "Feel free to connect or message me at your-email@jmu.edu."</li>
+    </ol>
+    <p class="fragment callout">💡 Keep it in first person, keep it conversational. This is not your cover letter.</p>
+</section>
+
+<section>
+    <h2>GitHub: Your Live Portfolio</h2>
+    <p class="callout">GitHub is where recruiters go to see if you actually code. An empty GitHub is worse than no GitHub.</p>
+    <div class="fragment">
+        <h3>What Recruiters Look For</h3>
+        <ul>
+            <li>Green contribution graph (consistent activity)</li>
+            <li>Pinned repos with clear, descriptive READMEs</li>
+            <li>Completed projects (not abandoned halfway)</li>
+            <li>Code that looks organized and readable</li>
+        </ul>
+    </div>
+    <p class="fragment callout green">✅ Even committing small things regularly (homework, practice problems, config files) keeps your graph green.</p>
+</section>
+
+<section>
+    <h2>The Perfect GitHub Repository</h2>
+    <p>Every pinned project should have:</p>
+    <ul>
+        <li class="fragment"><strong>README.md</strong> — What it does, why you built it, how to run it, screenshots</li>
+        <li class="fragment"><strong>Tech stack badge</strong> — Show the languages/frameworks used</li>
+        <li class="fragment"><strong>Live demo link</strong> — Deployed on Vercel, Netlify, or Heroku (free options exist)</li>
+        <li class="fragment"><strong>Clean commit history</strong> — Descriptive messages ("Add user auth" not "fixed stuff")</li>
+        <li class="fragment"><strong>A working project</strong> — Nothing says "unfinished" like a README that says "Coming soon"</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Building Social Proof on LinkedIn</h2>
+    <div class="two-col">
+        <div>
+            <h3>Recommendations</h3>
+            <ul>
+                <li>Ask professors, supervisors, mentors</li>
+                <li>Offer to write one for them too</li>
+                <li>1–2 strong recs = massive credibility boost</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Endorsements</h3>
+            <ul>
+                <li>Endorse classmates → they endorse back</li>
+                <li>Aim for 10+ endorsements on core skills</li>
+                <li>LinkedIn algorithm rewards this</li>
+            </ul>
+        </div>
+    </div>
+    <p class="fragment callout yellow">💡 Post about what you're learning. Share projects. React to industry news. Recruiters notice active profiles.</p>
+</section>
+
+<section>
+    <h2>The Open-to-Work Banner</h2>
+    <p>LinkedIn has an "Open to Work" feature that signals recruiters you're available.</p>
+    <ul class="fragment">
+        <li>Set your preferred roles, locations, start date</li>
+        <li>Use "Recruiters only" to keep it private from your current employer</li>
+        <li>Using this banner increases recruiter messages by <strong>~40%</strong></li>
+    </ul>
+    <p class="fragment callout green">✅ <strong>Right now:</strong> If you're looking for internships — turn this on. Today.</p>
+</section>
+
+<section>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li class="fragment">87% of recruiters use LinkedIn — your profile is your 24/7 representative</li>
+        <li class="fragment">Write a headline that markets you, not just labels you</li>
+        <li class="fragment">GitHub = proof of work. Active, documented projects matter</li>
+        <li class="fragment">Get 2–3 LinkedIn recommendations before graduation</li>
+        <li class="fragment">Sync your resume and LinkedIn — inconsistency raises red flags</li>
+    </ul>
+    <p class="fragment callout green">🏠 <strong>Homework:</strong> Update your LinkedIn headline and About section today. Pin your top 2 GitHub repos and add READMEs.</p>
+</section>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -595,5 +769,15 @@ Pull requests are welcome. For major changes, please open an issue first.
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lessons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        new Reveal(document.querySelector('#lesson-slideshow'), {
+            embedded: true, hash: false,
+            controls: true, progress: true,
+            slideNumber: 'c/t', center: true,
+            transition: 'slide', margin: 0.04,
+            width: '100%', height: '100%'
+        }).initialize();
+    </script>
 </body>
 </html>

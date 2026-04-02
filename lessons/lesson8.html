@@ -6,6 +6,40 @@
     <title>Lesson 8: Behavioral Interviewing - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/moon.css">
+    <style>
+        .slideshow-section { margin: 2.5rem 0; }
+        .slideshow-section > h2 { margin-bottom: 0.4rem; }
+        .slideshow-hint { color: #888; font-size: 0.875rem; margin-bottom: 0.75rem; font-style: italic; }
+        .reveal-container {
+            width: 100%; height: 480px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .reveal { height: 100%; }
+        .reveal .slides section { padding: 30px 50px; }
+        .reveal .slides section h2 { font-size: 1.6em; margin-bottom: 0.5em; }
+        .reveal .slides section h3 { font-size: 1.15em; margin-bottom: 0.4em; color: #aec6e8; }
+        .reveal .slides section ul { font-size: 0.82em; line-height: 1.7; }
+        .reveal .slides section p  { font-size: 0.82em; line-height: 1.6; }
+        .reveal .slides .stat-big { font-size: 2.8em; font-weight: 700; color: #58a6e0; }
+        .reveal .slides .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+        .reveal .slides .tag {
+            background: rgba(255,255,255,0.15); border-radius: 20px;
+            padding: 2px 12px; font-size: 0.75em;
+        }
+        .reveal .slides .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .reveal .slides .callout {
+            background: rgba(255,255,255,0.08); border-left: 4px solid #58a6e0;
+            padding: 0.6rem 1rem; border-radius: 0 8px 8px 0; margin: 0.5rem 0;
+            font-size: 0.82em;
+        }
+        .reveal .slides .green { color: #5cb85c; }
+        .reveal .slides .red { color: #e06060; }
+        .reveal .slides .yellow { color: #f0c040; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -64,6 +98,146 @@
                         <div class="lesson-tags">
                             <span class="lesson-tag">Interview Skills</span>
                             <span class="lesson-tag">STAR Method</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow-section">
+                        <h2>Lesson Slides</h2>
+                        <p class="slideshow-hint">Use arrow keys or click the arrows to navigate &bull; Press F for full screen</p>
+                        <div class="reveal-container">
+                            <div class="reveal" id="lesson-slideshow">
+                                <div class="slides">
+
+<section>
+    <h2>Behavioral Interviewing</h2>
+    <p style="color:#aec6e8">Telling Your Story with Confidence</p>
+    <div class="tag-row">
+        <span class="tag">Lesson 8</span>
+        <span class="tag">March 24, 2027</span>
+        <span class="tag">Interview Skills</span>
+    </div>
+</section>
+
+<section>
+    <h2>Why Behavioral Questions Exist</h2>
+    <p>Behavioral questions predict future performance based on past behavior. Companies use them because:</p>
+    <ul>
+        <li class="fragment">Technical skills can be taught. Character, judgment, and communication are harder to train.</li>
+        <li class="fragment">They want to know how you handle real situations — conflict, failure, pressure, teamwork.</li>
+        <li class="fragment">Cultural fit matters. Teams work closely together for months or years.</li>
+    </ul>
+    <p class="fragment callout">📊 Studies show behavioral interviews are <strong>55% more predictive</strong> of job performance than technical skills alone.</p>
+    <p class="fragment callout yellow">⚠️ "I'm a hard worker who loves challenges" is not a behavioral answer. Stories are.</p>
+</section>
+
+<section>
+    <h2>The STAR Method</h2>
+    <div class="two-col">
+        <div>
+            <ul>
+                <li><strong>S — Situation:</strong><br>Set the scene. Where, when, context.</li>
+                <li><strong>T — Task:</strong><br>What was your specific responsibility?</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><strong>A — Action:</strong><br>What <em>you</em> did. Use "I", not "we".</li>
+                <li><strong>R — Result:</strong><br>What happened? Quantify if possible.</li>
+            </ul>
+        </div>
+    </div>
+    <p class="fragment callout green">✅ The A (Action) should be the longest part — 50% of your answer. Results should be specific: "improved by 30%", "saved 2 hours per week", "onboarded 5 new members."</p>
+</section>
+
+<section>
+    <h2>STAR in Action</h2>
+    <p><strong>Question:</strong> "Tell me about a time you had to work under pressure."</p>
+    <div class="fragment callout red">
+        <p>❌ Bad: <em>"I'm good under pressure. I always meet deadlines and stay calm in tough situations."</em></p>
+    </div>
+    <div class="fragment callout green">
+        <p>✅ Good: <em>"During our senior capstone, our demo was 48 hours away when we discovered our database schema didn't handle concurrent users. I stayed late to redesign the data model, wrote tests to verify it, and documented the changes for the team. We shipped on time and our professor called it the cleanest implementation in the class."</em></p>
+    </div>
+</section>
+
+<section>
+    <h2>Your Story Bank: 8 Core Stories</h2>
+    <p>Prepare one story for each of these categories before every interview:</p>
+    <ul>
+        <li class="fragment"><strong>Leadership</strong> — When you took charge, even without a title</li>
+        <li class="fragment"><strong>Failure</strong> — When something went wrong and what you did about it</li>
+        <li class="fragment"><strong>Conflict</strong> — Disagreement with a teammate or decision-maker</li>
+        <li class="fragment"><strong>Success Under Pressure</strong> — Tight deadline, high stakes</li>
+        <li class="fragment"><strong>Initiative</strong> — You saw a problem and fixed it without being asked</li>
+        <li class="fragment"><strong>Teamwork</strong> — Collaboration story where you weren't the solo hero</li>
+        <li class="fragment"><strong>Learning</strong> — When you had to quickly learn something new</li>
+        <li class="fragment"><strong>Disagreement with a Decision</strong> — Respectful pushback or adaptation</li>
+    </ul>
+</section>
+
+<section>
+    <h2>"Tell Me About Yourself" — The Formula</h2>
+    <p>This is asked in every interview. Have a 90-second version memorized:</p>
+    <ol>
+        <li class="fragment"><strong>Present:</strong> "I'm a junior IT student at JMU focused on cybersecurity and cloud infrastructure..."</li>
+        <li class="fragment"><strong>Past:</strong> "I've spent the past year building projects in Python and AWS, including a home lab monitoring tool..."</li>
+        <li class="fragment"><strong>Why here:</strong> "I'm really excited about this role because [specific thing about the company] aligns with my interest in [your focus]..."</li>
+        <li class="fragment"><strong>Thread the needle:</strong> End with something that invites a natural follow-up question</li>
+    </ol>
+    <p class="fragment callout yellow">💡 This is your opening statement. It sets the tone for the entire interview. Practice until it feels natural — not memorized.</p>
+</section>
+
+<section>
+    <h2>Common Behavioral Questions</h2>
+    <ul>
+        <li class="fragment">"Tell me about a time you failed. What did you learn?"</li>
+        <li class="fragment">"Describe a situation where you disagreed with a teammate."</li>
+        <li class="fragment">"Tell me about a time you had to learn something quickly."</li>
+        <li class="fragment">"What's your biggest weakness?" (Be real. Have a growth arc.)</li>
+        <li class="fragment">"Why do you want to work here?" (Research the company. Say something specific.)</li>
+        <li class="fragment">"Where do you see yourself in 5 years?"</li>
+        <li class="fragment">"Tell me about a project you're most proud of."</li>
+    </ul>
+    <p class="fragment callout green">✅ Prep 2–3 strong STAR stories that can flex to answer most of these. Don't memorize different stories for every question.</p>
+</section>
+
+<section>
+    <h2>Red Flags Interviewers Watch For</h2>
+    <ul>
+        <li class="fragment red">❌ <strong>Blaming others</strong> — "My team didn't communicate well" with no ownership on your part</li>
+        <li class="fragment red">❌ <strong>No results</strong> — Stories that end without a clear outcome</li>
+        <li class="fragment red">❌ <strong>Using "we" only</strong> — Interviewers want to know what <em>you</em> did specifically</li>
+        <li class="fragment red">❌ <strong>Vague answers</strong> — "I think it went well" vs. specific, measurable outcomes</li>
+        <li class="fragment red">❌ <strong>Fake weakness</strong> — "I work too hard" as a weakness signals poor self-awareness</li>
+        <li class="fragment green">✅ Own your story. Be honest about failures. Show growth.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Practice Activity</h2>
+    <p class="callout yellow">Pair up. Take 2 minutes to prepare, then answer each question using STAR:</p>
+    <ol>
+        <li class="fragment">"Tell me about a time you had to work with a difficult teammate."</li>
+        <li class="fragment">"Describe a project where something went wrong and how you handled it."</li>
+    </ol>
+    <p class="fragment callout">Feedback to give: Was the Action step specific? Did they use "I"? Was there a measurable result? Did it sound natural or rehearsed?</p>
+</section>
+
+<section>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li class="fragment">Behavioral questions predict performance — companies take them seriously</li>
+        <li class="fragment">Always use the STAR framework: Situation, Task, Action, Result</li>
+        <li class="fragment">Build a Story Bank of 8 core stories before interviews</li>
+        <li class="fragment">Practice "Tell Me About Yourself" until it's effortless</li>
+        <li class="fragment">Use "I" not "we" — own your specific contributions</li>
+    </ul>
+    <p class="fragment callout green">🏠 <strong>Homework:</strong> Write out all 8 Story Bank entries using the STAR format. Practice delivering them out loud in under 2 minutes each.</p>
+</section>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -204,5 +378,15 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lessons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        new Reveal(document.querySelector('#lesson-slideshow'), {
+            embedded: true, hash: false,
+            controls: true, progress: true,
+            slideNumber: 'c/t', center: true,
+            transition: 'slide', margin: 0.04,
+            width: '100%', height: '100%'
+        }).initialize();
+    </script>
 </body>
 </html>

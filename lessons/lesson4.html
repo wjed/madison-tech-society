@@ -6,6 +6,40 @@
     <title>Lesson 4: Personal Projects That Employers Care About - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/moon.css">
+    <style>
+        .slideshow-section { margin: 2.5rem 0; }
+        .slideshow-section > h2 { margin-bottom: 0.4rem; }
+        .slideshow-hint { color: #888; font-size: 0.875rem; margin-bottom: 0.75rem; font-style: italic; }
+        .reveal-container {
+            width: 100%; height: 480px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .reveal { height: 100%; }
+        .reveal .slides section { padding: 30px 50px; }
+        .reveal .slides section h2 { font-size: 1.6em; margin-bottom: 0.5em; }
+        .reveal .slides section h3 { font-size: 1.15em; margin-bottom: 0.4em; color: #aec6e8; }
+        .reveal .slides section ul { font-size: 0.82em; line-height: 1.7; }
+        .reveal .slides section p  { font-size: 0.82em; line-height: 1.6; }
+        .reveal .slides .stat-big { font-size: 2.8em; font-weight: 700; color: #58a6e0; }
+        .reveal .slides .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+        .reveal .slides .tag {
+            background: rgba(255,255,255,0.15); border-radius: 20px;
+            padding: 2px 12px; font-size: 0.75em;
+        }
+        .reveal .slides .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .reveal .slides .callout {
+            background: rgba(255,255,255,0.08); border-left: 4px solid #58a6e0;
+            padding: 0.6rem 1rem; border-radius: 0 8px 8px 0; margin: 0.5rem 0;
+            font-size: 0.82em;
+        }
+        .reveal .slides .green { color: #5cb85c; }
+        .reveal .slides .red { color: #e06060; }
+        .reveal .slides .yellow { color: #f0c040; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -68,6 +102,131 @@
                         <div class="lesson-tags">
                             <span class="lesson-tag">Project Development</span>
                             <span class="lesson-tag">Portfolio Building</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow-section">
+                        <h2>Lesson Slides</h2>
+                        <p class="slideshow-hint">Use arrow keys or click the arrows to navigate &bull; Press F for full screen</p>
+                        <div class="reveal-container">
+                            <div class="reveal" id="lesson-slideshow">
+                                <div class="slides">
+
+<section>
+    <h2>Personal Projects That Employers Care About</h2>
+    <p style="color:#aec6e8">Building proof that you can do the job before you have the job</p>
+    <div class="tag-row">
+        <span class="tag">Lesson 4</span>
+        <span class="tag">November 11, 2026</span>
+        <span class="tag">Project Development</span>
+    </div>
+</section>
+
+<section>
+    <h2>Why Projects Beat GPA</h2>
+    <p class="stat-big">~60%</p>
+    <p>of hiring decisions for new grad roles are influenced by demonstrated project work, not GPA.</p>
+    <p class="fragment callout">A 3.9 GPA with no projects loses to a 3.2 with 3 impressive deployed apps — every time.</p>
+    <p class="fragment callout yellow">⚠️ Coursework doesn't count. "I built a todo app in class" is not a project. <em>Your own</em> projects signal initiative, creativity, and real-world skills.</p>
+</section>
+
+<section>
+    <h2>What Makes a Project Employer-Worthy?</h2>
+    <ul>
+        <li class="fragment"><strong>Solves a real problem</strong> — Even a small, specific problem ("I built this for my roommates")</li>
+        <li class="fragment"><strong>Tech stack is relevant</strong> — Uses tools employers actually want (Python, React, AWS, SQL...)</li>
+        <li class="fragment"><strong>It's deployed and working</strong> — Not just a code dump on GitHub</li>
+        <li class="fragment"><strong>You can talk about it</strong> — What challenges did you face? What would you change?</li>
+        <li class="fragment"><strong>Shows complexity</strong> — Multiple components, API integration, database, auth...</li>
+    </ul>
+    <p class="fragment callout green">✅ Projects don't need to be original ideas. A well-executed clone of a popular app is more impressive than a broken "original" idea.</p>
+</section>
+
+<section>
+    <h2>Types of Projects That Get Interviews</h2>
+    <div class="two-col">
+        <div>
+            <h3>🌐 Full-Stack Web Apps</h3>
+            <p>Frontend + backend + database. Show you understand the whole system.</p>
+            <h3>🔌 API Projects</h3>
+            <p>Consume a public API to build something useful. Simple but effective.</p>
+            <h3>📊 Data / Visualization</h3>
+            <p>Clean a dataset, analyze it, visualize insights. Great for data roles.</p>
+        </div>
+        <div>
+            <h3>🤖 Automation Tools</h3>
+            <p>Scripts that save time — web scrapers, report generators, bots.</p>
+            <h3>📱 Mobile Apps</h3>
+            <p>iOS/Android apps with React Native or Flutter.</p>
+            <h3>🔒 Security Projects</h3>
+            <p>CTF writeups, vulnerability tools, security scanners.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Where to Get Project Ideas</h2>
+    <ul>
+        <li class="fragment"><strong>Fix your own problems</strong> — What annoys you daily? Build the solution.</li>
+        <li class="fragment"><strong>Clone a popular app</strong> — Twitter, Spotify, Amazon, Airbnb. Learn by replicating.</li>
+        <li class="fragment"><strong>Build for a club or organization</strong> — MTS website was built by a student!</li>
+        <li class="fragment"><strong>Public datasets</strong> — Kaggle, data.gov, Census Bureau, sports data APIs</li>
+        <li class="fragment"><strong>Hackathons</strong> — JMU Hackathon, MLH, DevPost — 24 hours, real project, great resume line</li>
+        <li class="fragment"><strong>Open source contributions</strong> — Find a project you use and fix a bug</li>
+    </ul>
+    <p class="fragment callout">💡 <em>"I built an app that helps JMU students find parking spots using real-time data"</em> — that's a real project. Think local, think specific.</p>
+</section>
+
+<section>
+    <h2>The Project Documentation Checklist</h2>
+    <ul>
+        <li class="fragment">✅ <strong>README.md</strong> — What it does, tech stack, setup instructions, screenshots</li>
+        <li class="fragment">✅ <strong>Live Demo</strong> — Deployed link (Vercel, Netlify, Railway, Render — all free tiers)</li>
+        <li class="fragment">✅ <strong>Demo Video</strong> — 60-second Loom walkthrough. Recruiters love this.</li>
+        <li class="fragment">✅ <strong>Clean Code</strong> — Organized folders, consistent naming, no debug print statements</li>
+        <li class="fragment">✅ <strong>Commit History</strong> — Shows it was built incrementally, not dumped in one night</li>
+    </ul>
+    <p class="fragment callout yellow">⚠️ Half-finished projects on GitHub hurt you. Either complete them or make them private.</p>
+</section>
+
+<section>
+    <h2>The 2-Minute Project Pitch</h2>
+    <p>In every interview, you'll be asked "Tell me about a project you're proud of." Here's the structure:</p>
+    <ol>
+        <li class="fragment"><strong>The Problem:</strong> "I noticed that JMU students had no easy way to..."</li>
+        <li class="fragment"><strong>The Solution:</strong> "I built [X] using [tech stack] that allows users to..."</li>
+        <li class="fragment"><strong>The Challenge:</strong> "The hardest part was [specific technical challenge]..."</li>
+        <li class="fragment"><strong>The Result:</strong> "The app now has 40+ users and I learned..."</li>
+    </ol>
+    <p class="fragment callout green">✅ Practice this until it's natural. In interviews, a well-delivered project story is worth more than 5 LeetCode problems.</p>
+</section>
+
+<section>
+    <h2>Project Ideas by Interest</h2>
+    <ul>
+        <li class="fragment"><strong>SWE / CS:</strong> Full-stack web app, REST API, real-time chat, recommendation engine</li>
+        <li class="fragment"><strong>Data / Analytics:</strong> Predictive model, data dashboard, web scraper, sentiment analysis</li>
+        <li class="fragment"><strong>Cybersecurity:</strong> Password manager, port scanner, CTF challenge writeups, phishing detector</li>
+        <li class="fragment"><strong>IT / Systems:</strong> Home lab setup, network monitoring tool, automation scripts, cloud deployment</li>
+        <li class="fragment"><strong>PM / Design:</strong> User research study, redesign case study with Figma, competitive analysis</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li class="fragment">Projects are your proof of competence — start building now</li>
+        <li class="fragment">Deployed, documented projects beat GitHub code dumps every time</li>
+        <li class="fragment">Ideas are everywhere — fix your own problems, clone popular apps, do hackathons</li>
+        <li class="fragment">Be able to talk about every project you list on your resume</li>
+        <li class="fragment">Aim for 2–3 strong projects before your first internship application</li>
+    </ul>
+    <p class="fragment callout green">🏠 <strong>Homework:</strong> Start (or finish) one project before Lesson 5. Get it deployed and add a README.</p>
+</section>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -513,5 +672,15 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lessons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        new Reveal(document.querySelector('#lesson-slideshow'), {
+            embedded: true, hash: false,
+            controls: true, progress: true,
+            slideNumber: 'c/t', center: true,
+            transition: 'slide', margin: 0.04,
+            width: '100%', height: '100%'
+        }).initialize();
+    </script>
 </body>
 </html>

@@ -6,6 +6,40 @@
     <title>Lesson 2: Resume Building for Tech Roles - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/moon.css">
+    <style>
+        .slideshow-section { margin: 2.5rem 0; }
+        .slideshow-section > h2 { margin-bottom: 0.4rem; }
+        .slideshow-hint { color: #888; font-size: 0.875rem; margin-bottom: 0.75rem; font-style: italic; }
+        .reveal-container {
+            width: 100%; height: 480px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .reveal { height: 100%; }
+        .reveal .slides section { padding: 30px 50px; }
+        .reveal .slides section h2 { font-size: 1.6em; margin-bottom: 0.5em; }
+        .reveal .slides section h3 { font-size: 1.15em; margin-bottom: 0.4em; color: #aec6e8; }
+        .reveal .slides section ul { font-size: 0.82em; line-height: 1.7; }
+        .reveal .slides section p  { font-size: 0.82em; line-height: 1.6; }
+        .reveal .slides .stat-big { font-size: 2.8em; font-weight: 700; color: #58a6e0; }
+        .reveal .slides .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+        .reveal .slides .tag {
+            background: rgba(255,255,255,0.15); border-radius: 20px;
+            padding: 2px 12px; font-size: 0.75em;
+        }
+        .reveal .slides .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .reveal .slides .callout {
+            background: rgba(255,255,255,0.08); border-left: 4px solid #58a6e0;
+            padding: 0.6rem 1rem; border-radius: 0 8px 8px 0; margin: 0.5rem 0;
+            font-size: 0.82em;
+        }
+        .reveal .slides .green { color: #5cb85c; }
+        .reveal .slides .red { color: #e06060; }
+        .reveal .slides .yellow { color: #f0c040; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -68,6 +102,167 @@
                         <div class="lesson-tags">
                             <span class="lesson-tag">Professional Development</span>
                             <span class="lesson-tag">Career Materials</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow-section">
+                        <h2>Lesson Slides</h2>
+                        <p class="slideshow-hint">Use arrow keys or click the arrows to navigate &bull; Press F for full screen</p>
+                        <div class="reveal-container">
+                            <div class="reveal" id="lesson-slideshow">
+                                <div class="slides">
+
+<section>
+    <h2>Resume Building for Tech Roles</h2>
+    <p style="color:#aec6e8">Your one-page pitch to every company you want to work for</p>
+    <div class="tag-row">
+        <span class="tag">Lesson 2</span>
+        <span class="tag">September 30, 2026</span>
+        <span class="tag">Professional Development</span>
+    </div>
+</section>
+
+<section>
+    <h2>The 6-Second Rule</h2>
+    <p class="stat-big">6 sec</p>
+    <p>Average time a recruiter spends on your resume before deciding yes or no.</p>
+    <p class="fragment callout">That's not a typo. Before you write a single bullet point, understand: your resume is a <strong>skimming document</strong>, not a reading document. Design it accordingly.</p>
+    <p class="fragment callout yellow">⚠️ At large companies, an ATS (robot) screens your resume <em>before</em> any human sees it.</p>
+</section>
+
+<section>
+    <h2>Tech Resume Structure</h2>
+    <ul>
+        <li class="fragment"><strong>Header</strong> — Name, phone, email, LinkedIn, GitHub (no photo, no address)</li>
+        <li class="fragment"><strong>Education</strong> — School, degree, GPA (if 3.5+), graduation date, relevant coursework</li>
+        <li class="fragment"><strong>Experience</strong> — Internships, part-time jobs, campus roles (reverse chronological)</li>
+        <li class="fragment"><strong>Projects</strong> — 2–4 personal or class projects with impact and tech stack</li>
+        <li class="fragment"><strong>Skills</strong> — Languages, frameworks, tools (not soft skills)</li>
+    </ul>
+    <p class="fragment callout green">✅ Keep it to <strong>one page</strong> unless you have 5+ years of experience. Use clean fonts: Calibri, Arial, or LaTeX.</p>
+</section>
+
+<section>
+    <h2>The XYZ Bullet Formula</h2>
+    <p class="callout">Accomplished <strong>[X]</strong> as measured by <strong>[Y]</strong>, by doing <strong>[Z]</strong></p>
+    <p>— Created by Google's hiring team</p>
+    <div class="fragment">
+        <p class="callout red">❌ Weak: <em>"Worked on a web application using React"</em></p>
+    </div>
+    <div class="fragment">
+        <p class="callout green">✅ Strong: <em>"Built a React/Node.js task manager used by 40+ students, reducing project coordination time by 30%"</em></p>
+    </div>
+    <div class="fragment">
+        <p class="callout red">❌ Weak: <em>"Helped customers with tech support"</em></p>
+    </div>
+    <div class="fragment">
+        <p class="callout green">✅ Strong: <em>"Resolved 25+ technical support tickets per week, maintaining a 98% customer satisfaction score"</em></p>
+    </div>
+</section>
+
+<section>
+    <h2>Action Verb Starters</h2>
+    <div class="two-col">
+        <div>
+            <h3>Technical Work</h3>
+            <ul>
+                <li>Built, Developed, Designed</li>
+                <li>Engineered, Implemented</li>
+                <li>Automated, Optimized</li>
+                <li>Deployed, Configured</li>
+                <li>Debugged, Refactored</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Leadership &amp; Impact</h3>
+            <ul>
+                <li>Led, Directed, Managed</li>
+                <li>Spearheaded, Launched</li>
+                <li>Increased, Reduced, Saved</li>
+                <li>Collaborated, Mentored</li>
+                <li>Presented, Trained</li>
+            </ul>
+        </div>
+    </div>
+    <p class="fragment callout yellow">🚫 Never start a bullet with "Responsible for" or "Assisted with."</p>
+</section>
+
+<section>
+    <h2>Beating the ATS Robot</h2>
+    <p>Applicant Tracking Systems filter resumes before humans see them. Up to <strong class="green">75%</strong> of resumes get rejected by ATS before a recruiter reads them.</p>
+    <ul class="fragment">
+        <li>Mirror keywords from the job description</li>
+        <li>Use standard section headers (not "My Work Experience")</li>
+        <li>Avoid tables, columns, headers/footers, graphics</li>
+        <li>Use .docx or .pdf — check what the job posting asks for</li>
+        <li>Spell out acronyms at least once (e.g., "Machine Learning (ML)")</li>
+    </ul>
+    <p class="fragment callout">💡 Tools like <strong>Jobscan</strong> let you compare your resume vs. a job description and get a match score.</p>
+</section>
+
+<section>
+    <h2>Common Resume Mistakes</h2>
+    <ul>
+        <li class="fragment red">❌ Listing skills like "Microsoft Word" or "Teamwork"</li>
+        <li class="fragment red">❌ Generic objective statements ("Looking for a challenging role...")</li>
+        <li class="fragment red">❌ GPA below 3.0 listed prominently</li>
+        <li class="fragment red">❌ High school information (unless freshman year)</li>
+        <li class="fragment red">❌ Responsibilities listed, not accomplishments</li>
+        <li class="fragment red">❌ Inconsistent formatting (different fonts, sizes, spacing)</li>
+        <li class="fragment green">✅ Fix these and you're already in the top 20% of applicants</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Resume Building Tools</h2>
+    <div class="two-col">
+        <div>
+            <h3>Recommended</h3>
+            <ul>
+                <li><strong>Overleaf (LaTeX)</strong> — Professional, ATS-friendly, looks great</li>
+                <li><strong>Jake's Resume Template</strong> — Most popular CS/IT template</li>
+                <li><strong>Word / Google Docs</strong> — Simple, works well if formatted properly</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Avoid for Tech</h3>
+            <ul>
+                <li><strong>Canva</strong> — Beautiful but bad for ATS</li>
+                <li><strong>Visual CVs</strong> — Infographic-style resumes confuse parsers</li>
+                <li><strong>Resume.io, Zety</strong> — Okay, but check ATS compatibility</li>
+            </ul>
+        </div>
+    </div>
+    <p class="fragment callout green">🔗 Search "Jake's Resume Template" on Overleaf — it's free and used by engineers at Google, Meta, etc.</p>
+</section>
+
+<section>
+    <h2>Workshop: Fix These Bullets</h2>
+    <p>Rewrite each bullet using the XYZ formula:</p>
+    <ol>
+        <li class="fragment"><em>"Was part of a team that made a mobile app"</em></li>
+        <li class="fragment"><em>"Did research for a professor"</em></li>
+        <li class="fragment"><em>"Helped improve the company website"</em></li>
+        <li class="fragment"><em>"Worked on database stuff for my internship"</em></li>
+    </ol>
+    <p class="fragment callout yellow">⏱ 10 minutes — then we share and compare. Strong bullets = more interviews.</p>
+</section>
+
+<section>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li class="fragment">Recruiters spend ~6 seconds on your resume — make it skimmable</li>
+        <li class="fragment">Every bullet = accomplishment, not responsibility. Use XYZ formula</li>
+        <li class="fragment">ATS screens first — mirror job description keywords</li>
+        <li class="fragment">One page, clean formatting, standard sections</li>
+        <li class="fragment">Use Jake's LaTeX template or clean Word/Google Doc format</li>
+    </ul>
+    <p class="fragment callout green">🏠 <strong>Homework:</strong> Rewrite your resume using today's techniques. Get a peer to review it before Lesson 3.</p>
+</section>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -646,5 +841,15 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lessons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        new Reveal(document.querySelector('#lesson-slideshow'), {
+            embedded: true, hash: false,
+            controls: true, progress: true,
+            slideNumber: 'c/t', center: true,
+            transition: 'slide', margin: 0.04,
+            width: '100%', height: '100%'
+        }).initialize();
+    </script>
 </body>
 </html>

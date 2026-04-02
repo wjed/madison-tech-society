@@ -6,6 +6,40 @@
     <title>Lesson 6: Finding and Applying to Internships - Madison Tech Society</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Reveal.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/theme/moon.css">
+    <style>
+        .slideshow-section { margin: 2.5rem 0; }
+        .slideshow-section > h2 { margin-bottom: 0.4rem; }
+        .slideshow-hint { color: #888; font-size: 0.875rem; margin-bottom: 0.75rem; font-style: italic; }
+        .reveal-container {
+            width: 100%; height: 480px;
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        .reveal { height: 100%; }
+        .reveal .slides section { padding: 30px 50px; }
+        .reveal .slides section h2 { font-size: 1.6em; margin-bottom: 0.5em; }
+        .reveal .slides section h3 { font-size: 1.15em; margin-bottom: 0.4em; color: #aec6e8; }
+        .reveal .slides section ul { font-size: 0.82em; line-height: 1.7; }
+        .reveal .slides section p  { font-size: 0.82em; line-height: 1.6; }
+        .reveal .slides .stat-big { font-size: 2.8em; font-weight: 700; color: #58a6e0; }
+        .reveal .slides .tag-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.6rem; }
+        .reveal .slides .tag {
+            background: rgba(255,255,255,0.15); border-radius: 20px;
+            padding: 2px 12px; font-size: 0.75em;
+        }
+        .reveal .slides .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .reveal .slides .callout {
+            background: rgba(255,255,255,0.08); border-left: 4px solid #58a6e0;
+            padding: 0.6rem 1rem; border-radius: 0 8px 8px 0; margin: 0.5rem 0;
+            font-size: 0.82em;
+        }
+        .reveal .slides .green { color: #5cb85c; }
+        .reveal .slides .red { color: #e06060; }
+        .reveal .slides .yellow { color: #f0c040; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -64,6 +98,149 @@
                         <div class="lesson-tags">
                             <span class="lesson-tag">Job Search</span>
                             <span class="lesson-tag">Application Strategy</span>
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow-section">
+                        <h2>Lesson Slides</h2>
+                        <p class="slideshow-hint">Use arrow keys or click the arrows to navigate &bull; Press F for full screen</p>
+                        <div class="reveal-container">
+                            <div class="reveal" id="lesson-slideshow">
+                                <div class="slides">
+
+<section>
+    <h2>Finding and Applying to Internships</h2>
+    <p style="color:#aec6e8">Where to look, when to apply, and how to play the numbers game</p>
+    <div class="tag-row">
+        <span class="tag">Lesson 6</span>
+        <span class="tag">February 10, 2027</span>
+        <span class="tag">Job Search</span>
+    </div>
+</section>
+
+<section>
+    <h2>The Internship Timeline</h2>
+    <p class="callout yellow">⚠️ Big Tech companies (Google, Meta, Amazon, Microsoft) open applications in <strong>August–October</strong> for the following summer. If you wait until January, you've missed them.</p>
+    <ul class="fragment">
+        <li><strong>Aug–Oct:</strong> Big Tech, top consulting firms open applications</li>
+        <li><strong>Nov–Dec:</strong> Mid-size companies, startups, government agencies</li>
+        <li><strong>Jan–Mar:</strong> Smaller companies, local businesses, late-cycle openings</li>
+        <li><strong>April+:</strong> Backfill spots, government, non-profits</li>
+    </ul>
+    <p class="fragment callout green">✅ If you want a summer internship — start applying <strong>the prior September</strong>. Yes, that early.</p>
+</section>
+
+<section>
+    <h2>Where to Search (Beyond LinkedIn)</h2>
+    <div class="two-col">
+        <div>
+            <h3>Best Platforms</h3>
+            <ul>
+                <li><strong>Handshake</strong> — Specifically for students, JMU-connected companies</li>
+                <li><strong>Indeed</strong> — Broad, lots of smaller companies</li>
+                <li><strong>GitHub Jobs / Levels.fyi</strong> — Tech-specific</li>
+                <li><strong>Company career pages</strong> — Apply directly, not through aggregators</li>
+            </ul>
+        </div>
+        <div>
+            <h3>CS/IT Specific</h3>
+            <ul>
+                <li><strong>Intern Supply List</strong> (GitHub) — Huge aggregated list updated yearly</li>
+                <li><strong>PittCSC GitHub list</strong> — Curated internships for CS/IT students</li>
+                <li><strong>AngelList / Wellfound</strong> — Startup internships</li>
+                <li><strong>USAJobs.gov</strong> — Government IT roles</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Reading a Job Description Like a Pro</h2>
+    <p>Most JDs are wishlists, not requirements. Understand what's actually required:</p>
+    <ul>
+        <li class="fragment"><strong>"Required"</strong> — These actually matter. Hit 60%+ of these before applying.</li>
+        <li class="fragment"><strong>"Preferred"</strong> — Nice to have. Don't let these stop you from applying.</li>
+        <li class="fragment"><strong>"1–3 years experience"</strong> for internships — This is HR boilerplate. Apply anyway.</li>
+        <li class="fragment"><strong>Long lists of technologies</strong> — They want people who can learn, not people who know all of these</li>
+    </ul>
+    <p class="fragment callout green">✅ If you meet 60–70% of the requirements, apply. The worst they can say is no.</p>
+</section>
+
+<section>
+    <h2>The 70% Rule</h2>
+    <p class="stat-big">70%</p>
+    <p>If you meet 70% of the requirements, you should apply. Period.</p>
+    <p class="fragment callout">Studies show men apply when they meet <strong>60%</strong> of requirements, while women apply only when they meet <strong>100%</strong>. Both are wrong — 70% is the sweet spot where your time is well spent.</p>
+    <p class="fragment callout yellow">💡 Exception: If a JD says "must have Python experience" and you've never used Python — maybe learn it before applying to Python roles.</p>
+</section>
+
+<section>
+    <h2>Your Application Tracking System</h2>
+    <p>You'll apply to 30–100+ companies. Without a tracker, you'll forget who you applied to.</p>
+    <p>Track these columns:</p>
+    <ul class="fragment">
+        <li>Company, role, date applied</li>
+        <li>Application method (direct, LinkedIn, Handshake)</li>
+        <li>Status (applied, screen, interview, offer, rejected)</li>
+        <li>Contact name/email at company</li>
+        <li>Follow-up dates</li>
+        <li>Notes from interviews</li>
+    </ul>
+    <p class="fragment callout green">✅ Use a Google Sheet. It takes 2 minutes per application and saves massive stress later.</p>
+</section>
+
+<section>
+    <h2>Tailoring Without Starting From Scratch</h2>
+    <p>You need tailored applications, but you don't have 2 hours per job. Here's the 20-minute method:</p>
+    <ol>
+        <li class="fragment"><strong>5 min:</strong> Read the JD. Highlight 5–10 key skills/buzzwords.</li>
+        <li class="fragment"><strong>10 min:</strong> Adjust 3–4 resume bullets to mirror those keywords naturally.</li>
+        <li class="fragment"><strong>5 min:</strong> Update your cover letter opening paragraph (if required).</li>
+    </ol>
+    <p class="fragment callout">💡 Keep a "master resume" with all your experiences. For each application, copy it and trim/adjust. Never start from a blank page.</p>
+</section>
+
+<section>
+    <h2>The Follow-Up Email Template</h2>
+    <p>Send 5–7 days after applying:</p>
+    <div class="callout fragment">
+        <p><em>Subject: Following Up — Software Engineering Internship Application</em></p>
+        <p><em>Hi [Recruiter Name],</em><br>
+        <em>I applied for the Software Engineering Internship on [date] and wanted to follow up to express my continued interest. I'd love the opportunity to discuss how my experience with [relevant skill] could contribute to your team. Thanks for your time!</em></p>
+        <p><em>Best, [Your Name]</em></p>
+    </div>
+    <p class="fragment callout green">✅ This email alone can move you from the "reviewed" pile to the "interview" pile. Send it.</p>
+</section>
+
+<section>
+    <h2>The Numbers Game Reality</h2>
+    <p>At top companies, the acceptance rate for internship applications is:</p>
+    <p class="stat-big fragment">1–3%</p>
+    <p class="fragment">Even strong candidates get rejected constantly. It's not personal — it's volume.</p>
+    <ul class="fragment">
+        <li>Target 50–100 applications for a competitive summer internship</li>
+        <li>1–3 offers is a great outcome from 100 applications</li>
+        <li>Each rejection is data — use it to improve</li>
+        <li>Your first year applying is your worst year — keep going</li>
+    </ul>
+    <p class="fragment callout green">✅ The students who get offers aren't smarter. They apply to more companies and follow up more consistently.</p>
+</section>
+
+<section>
+    <h2>Key Takeaways</h2>
+    <ul>
+        <li class="fragment">Start applying in September for the following summer — not January</li>
+        <li class="fragment">Use Handshake, company career pages, and the PittCSC GitHub list</li>
+        <li class="fragment">Apply if you meet 70% of requirements — the worst is a rejection</li>
+        <li class="fragment">Track every application in a spreadsheet</li>
+        <li class="fragment">Follow up after 5–7 days. Most students don't. You should.</li>
+    </ul>
+    <p class="fragment callout green">🏠 <strong>Homework:</strong> Set up your application tracker. Apply to 5 internships this week using the 20-minute tailoring method.</p>
+</section>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -266,5 +443,15 @@
 
     <script src="../scripts/main.js"></script>
     <script src="../scripts/lessons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.0/dist/reveal.js"></script>
+    <script>
+        new Reveal(document.querySelector('#lesson-slideshow'), {
+            embedded: true, hash: false,
+            controls: true, progress: true,
+            slideNumber: 'c/t', center: true,
+            transition: 'slide', margin: 0.04,
+            width: '100%', height: '100%'
+        }).initialize();
+    </script>
 </body>
 </html>
