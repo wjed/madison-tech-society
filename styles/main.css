@@ -3651,3 +3651,20 @@ ip Company Logos */
         height: 25px;
     }
 }
+
+/* Guest Speaker Cards */
+.lesson-card--guest-speaker {
+    background: linear-gradient(135deg, #f8f4ff 0%, #eef6ff 100%);
+    border: 1px solid #c4b5fd;
+    cursor: default;
+}
+
+.lesson-card--guest-speaker:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(69, 0, 132, 0.12);
+}
+
+.lesson-tag--guest {
+    background: #450084;
+    color: white;
+}
